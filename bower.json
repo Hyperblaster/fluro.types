@@ -1,0 +1,24 @@
+{
+  "name": "fluro.types",
+  "description": "A client side service for retrieving basic type details for Fluro Admin",
+  "homepage": "http://www.fluro.io",
+  "authors": [
+    "Cade Embery"
+  ],
+  "main": "./dist/fluro.types.js",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Hyperblaster/fluro.types.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fluro.config": "*"
+  }
+}
