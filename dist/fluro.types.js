@@ -29,6 +29,8 @@ angular.module('fluro.types')
                 title: 'Names',
                 key: 'firstLine'
             }],
+            viewModes: ['duplicates']
+
         })
 
 
@@ -253,7 +255,8 @@ angular.module('fluro.types')
             filters: [{
                 title: 'Gender',
                 key: 'gender'
-            }]
+            }],
+            viewModes: ['duplicates']
         })
 
         controller.types.push({
