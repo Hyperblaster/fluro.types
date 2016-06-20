@@ -29,7 +29,7 @@ angular.module('fluro.types')
                 title: 'Names',
                 key: 'firstLine'
             }],
-            viewModes: ['duplicates']
+            viewModes: ['duplicates', 'map']
 
         })
 
