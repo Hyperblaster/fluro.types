@@ -22,6 +22,17 @@ angular.module('fluro.types')
 
 
         controller.types.push({
+            singular: 'Comment',
+            plural: 'Comments',
+            path: 'comment',
+            columns: [{
+                title: 'Parent',
+                key: 'parent'
+            }],
+        })
+
+
+        controller.types.push({
             singular: 'Family Household',
             plural: 'Family Households',
             path: 'family',
@@ -974,6 +985,8 @@ angular.module('fluro.types')
 
         return primitives.concat(defined);
     }
+
+   
 
 
     ///////////////////
