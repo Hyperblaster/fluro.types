@@ -22,9 +22,9 @@ angular.module('fluro.types')
 
 
         controller.types.push({
-            singular: 'Comment',
-            plural: 'Comments',
-            path: 'comment',
+            singular: 'Post',
+            plural: 'Posts',
+            path: 'post',
             columns: [{
                 title: 'Parent',
                 key: 'parent'
