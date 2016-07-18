@@ -531,6 +531,21 @@ angular.module('fluro.types')
         })
 
         controller.types.push({
+            parent:'event',
+            singular: 'Event Track',
+            plural: 'Event Tracks',
+            path: 'eventtrack',
+            // filters: [{
+            //     title: 'Locations',
+            //     key: 'locations',
+            // }, {
+            //     title: 'Rooms',
+            //     key: 'rooms',
+            // }],
+            // viewModes: ['calendar', 'cards']
+        })
+
+        controller.types.push({
             singular: 'Location',
             plural: 'Locations',
             path: 'location',
