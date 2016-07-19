@@ -534,7 +534,8 @@ angular.module('fluro.types')
 
 
         controller.types.push({
-            sub: 'event',
+            // sub: 'event',
+            hideFromMenu:true,
             singular: 'Event Track',
             plural: 'Event Tracks',
             path: 'eventtrack',
@@ -972,39 +973,40 @@ angular.module('fluro.types')
                     /**/
 
         var allTypes = controller.types;
+
         controller.menuTree = _.chain(allTypes)
             .filter(function(type) {
-                if(!type.sub) {
-                    return true;
-                }
+                return !type.hideFromMenu;
             })
             .map(function(type) {
 
                 var children = [];
 
-                //Add any submenu items
-                var subChildren = _.filter(allTypes, function(typeEntry) {
-                    return (typeEntry.sub == type.path);
-                });
+                // //Add any submenu items
+                // var subChildren = _.filter(allTypes, function(typeEntry) {
+                //     return (typeEntry.sub == type.path);
+                // });
 
-                if(subChildren && subChildren.length) {
-                    children = children.concat(subChildren);
-                }
+                // if(subChildren && subChildren.length) {
+                //     children = children.concat(subChildren);
+                // }
 
                 //Then append all the child types
                 children = children.concat(grouped[type.path]);
-
-
 
                 ////////////////////////////////////////////////////
 
                 var canAccess = FluroAccess.canAccess(type.path);
 
-                if (canAccess && children) {
+                
+
+                type.children = _.compact(children);
+
+                //Add the basic type to the top
+                if (canAccess && children && children.length) {
                     children.unshift(type);
                 }
 
-                type.children = _.compact(children);
 
                 if (canAccess || (children && children.length)) {
                     return type;
