@@ -505,6 +505,8 @@ angular.module('fluro.types')
             }]
         })
 
+
+
         controller.types.push({
             singular: 'Event',
             plural: 'Events',
@@ -530,6 +532,7 @@ angular.module('fluro.types')
             viewModes: ['calendar', 'cards']
         })
 
+
         controller.types.push({
             sub: 'event',
             singular: 'Event Track',
@@ -544,6 +547,8 @@ angular.module('fluro.types')
             // }],
             // viewModes: ['calendar', 'cards']
         })
+
+        
 
         controller.types.push({
             singular: 'Location',
@@ -967,7 +972,9 @@ angular.module('fluro.types')
                     /**/
         controller.menuTree = _.chain(controller.types)
             .filter(function(type) {
-                return !(type.sub);
+                if(!type.sub) {
+                    return true;
+                }
             })
             .map(function(type) {
 
@@ -975,6 +982,8 @@ angular.module('fluro.types')
 
                 //Add any submenu items
                 children = _.filter(controller.types, function(sub) {
+
+                    console.log('SUB', sub);
                     return (sub.sub == type.path);
                 });
 
