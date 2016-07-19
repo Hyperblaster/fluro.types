@@ -535,7 +535,7 @@ angular.module('fluro.types')
 
         controller.types.push({
             // sub: 'event',
-            hideFromMenu:true,
+            hideFromMenu: true,
             singular: 'Event Track',
             plural: 'Event Tracks',
             path: 'eventtrack',
@@ -549,7 +549,7 @@ angular.module('fluro.types')
             // viewModes: ['calendar', 'cards']
         })
 
-        
+
 
         controller.types.push({
             singular: 'Location',
@@ -972,13 +972,11 @@ angular.module('fluro.types')
 
                     /**/
 
-        var allTypes = controller.types;
+        var allTypes = _.filter(controller.types, function(type) {
+            return !type.hideFromMenu;
+        });
 
-        controller.menuTree = _.chain(allTypes)
-            .filter(function(type) {
-                return !type.hideFromMenu;
-            })
-            .map(function(type) {
+        controller.menuTree = _.chain(allTypes).map(function(type) {
 
                 var children = [];
 
@@ -998,15 +996,12 @@ angular.module('fluro.types')
 
                 var canAccess = FluroAccess.canAccess(type.path);
 
-                
-
                 type.children = _.compact(children);
 
                 //Add the basic type to the top
                 if (canAccess && children && children.length) {
                     children.unshift(type);
                 }
-
 
                 if (canAccess || (children && children.length)) {
                     return type;
