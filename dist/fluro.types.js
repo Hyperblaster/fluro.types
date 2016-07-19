@@ -529,7 +529,7 @@ angular.module('fluro.types')
                 title: 'Rooms',
                 key: 'rooms',
             }],
-            viewModes: ['calendar', 'cards']
+            viewModes: ['calendar', 'cards', 'tracks']
         })
 
 
