@@ -972,6 +972,9 @@ angular.module('fluro.types')
 
                 //Add any submenu items
                 children = _.filter(controller.types, function(sub) {
+
+                    console.log('check sub', sub);
+                    
                     return (sub.sub == type.path);
                 });
 
