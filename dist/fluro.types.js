@@ -987,10 +987,14 @@ angular.module('fluro.types')
                     return (typeEntry.sub == type.path);
                 });
 
-                console.log(type.singluar, subChildren.length);
+                if(subChildren && subChildren.length) {
+                    children = children.concat(subChildren);
+                }
 
                 //Then append all the child types
                 children = children.concat(grouped[type.path]);
+
+
 
                 ////////////////////////////////////////////////////
 
@@ -1000,7 +1004,7 @@ angular.module('fluro.types')
                     children.unshift(type);
                 }
 
-                type.children = children;
+                type.children = _.compact(children);
 
                 if (canAccess || (children && children.length)) {
                     return type;
