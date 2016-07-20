@@ -997,13 +997,19 @@ angular.module('fluro.types')
                 var canAccess = FluroAccess.canAccess(type.path);
                 type.children = _.compact(children);
 
+                ////////////////////////////////////////////////////
+
                 //Add the basic type to the top if you can access the top item
                 if (canAccess && type.children.length) {
                     type.children.unshift(type);
                 }
 
-                if (canAccess || (children && children.length)) {
-                    console.log('Can access', type.path, 'because of ', children.length)
+               
+
+                ////////////////////////////////////////////////////
+
+                if (canAccess || (type.children && type.children.length)) {
+                    console.log('Can access', type.path, 'because of ', type.children.length)
                     return type;
                 } else {
                     console.log('Cant access', type.path, 'because')
