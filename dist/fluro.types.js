@@ -882,7 +882,7 @@ angular.module('fluro.types')
 
     controller.sideLoadDefinition = function(definition) {
 
-        console.log('Side Load Definition', definition)
+      //  console.log('Side Load Definition', definition)
         if (controller.definedTypes) {
 
             var exists = _.some(controller.definedTypes, {
@@ -901,7 +901,7 @@ angular.module('fluro.types')
 
     controller.refreshDefinedTypes = function() {
 
-        console.log('Refresh defined types')
+        // console.log('Refresh defined types')
         //if (controller.definedTypes) {
         //   return controller.definedTypes;
         //}
@@ -1009,10 +1009,10 @@ angular.module('fluro.types')
                 ////////////////////////////////////////////////////
 
                 if (canAccess || (type.children && type.children.length)) {
-                    console.log('Can access', type.path, 'because of ', type.children.length)
+                    // console.log('Can access', type.path, 'because of ', type.children.length)
                     return type;
                 } else {
-                    console.log('Cant access', type.path, 'because')
+                    // console.log('Cant access', type.path, 'because')
                     return null;
                 }
             })
