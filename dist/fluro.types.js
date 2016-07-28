@@ -329,6 +329,26 @@ angular.module('fluro.types')
             }]
         })
 
+        controller.types.push({
+            singular: 'Payment Method',
+            plural: 'Payment Methods',
+            path: 'method',
+            columns: [{
+                title: 'User',
+                key: 'user'
+            }, {
+                title: 'Persona',
+                key: 'persona'
+            }, {
+                title: 'Integration',
+                key: 'integration'
+            }],
+            // filters: [{
+            //     title: 'License',
+            //     key: 'license'
+            // }]
+        })
+
 
         controller.types.push({
             singular: 'Transaction',
