@@ -292,19 +292,16 @@ angular.module('fluro.types')
             columns: [{
                 title: 'User',
                 key: 'owner.name'
-            },{
-                title: 'User',
-                key: 'owner.name'
             },
             {
                 title: 'Persona',
-                key: 'managedOwner.name'
+                key: 'managedOwner.title'
             }, {
                 title: 'Collection Email',
                 key: 'collectionEmail'
             },
             {
-                title: 'Expiry',
+                title: 'Expires',
                 key: 'expiryDate',
                 filter: 'timeago'
             },
