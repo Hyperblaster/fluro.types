@@ -306,7 +306,7 @@ angular.module('fluro.types')
             {
                 title: 'Expiry',
                 key: 'expiryDate',
-                renderer: 'datetime'
+                filter: 'timeago'
             },
             // {
             //     title: 'Renews',
