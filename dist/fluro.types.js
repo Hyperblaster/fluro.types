@@ -1039,6 +1039,7 @@ angular.module('fluro.types')
                 children = children.concat(grouped[type.path]);
 
                 children = _.filter(children, function(child) {
+                    console.log('Child', child)
                     return FluroAccess.canAccess(child.path);
                 })
              
