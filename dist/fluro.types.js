@@ -1041,7 +1041,6 @@ angular.module('fluro.types')
                 children = _.chain(children)
                 .compact()
                 .filter(function(child) {
-                    console.log('Child', child)
                     return FluroAccess.canAccess(child.path);
                 })
                 .value();
