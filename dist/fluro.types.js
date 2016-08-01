@@ -1051,7 +1051,7 @@ angular.module('fluro.types')
                 ////////////////////////////////////////////////////
 
                 var canAccess = FluroAccess.canAccess(type.path);
-                /type.children = children;//_.compact(children);
+                type.children = children;//_.compact(children);
 
                 ////////////////////////////////////////////////////
 
