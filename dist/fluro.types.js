@@ -1038,6 +1038,12 @@ angular.module('fluro.types')
                 //Then append all the child types
                 children = children.concat(grouped[type.path]);
 
+                children = _.filter(children, function(child) {
+                    return FluroAccess.canAccess(child.path);
+                })
+             
+
+
                 ////////////////////////////////////////////////////
 
                 var canAccess = FluroAccess.canAccess(type.path);
