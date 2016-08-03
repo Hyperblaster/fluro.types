@@ -293,14 +293,15 @@ angular.module('fluro.types')
             singular: 'Purchase',
             plural: 'Purchases',
             path: 'purchase',
-            columns: [{
-                title: 'Licenses',
-                key: 'license',
-                renderer:'license',
-            },
+            columns: [
             {
                 title: 'Purchased By',
                 key: 'purchaser',
+            },
+            {
+                title: 'Licenses',
+                key: 'license',
+                renderer:'license',
             },
             {
                 title: 'Managed Licenses',
