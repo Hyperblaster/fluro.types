@@ -299,7 +299,7 @@ angular.module('fluro.types')
                 renderer:'license',
             },
             {
-                title: 'Purchaser',
+                title: 'Purchased By',
                 key: 'purchaser',
             },
             {
