@@ -31,8 +31,6 @@ angular.module('fluro.types')
             }],
         })
 
-
-
         controller.types.push({
             singular: 'Process',
             plural: 'Processes',
@@ -41,8 +39,7 @@ angular.module('fluro.types')
             //     title: 'Parent',
             //     key: 'parent'
             // }],
-        })
-
+        });
 
         controller.types.push({
             singular: 'Family Household',
