@@ -32,6 +32,18 @@ angular.module('fluro.types')
         })
 
 
+
+        controller.types.push({
+            singular: 'Process',
+            plural: 'Processes',
+            path: 'process',
+            // columns: [{
+            //     title: 'Parent',
+            //     key: 'parent'
+            // }],
+        })
+
+
         controller.types.push({
             singular: 'Family Household',
             plural: 'Family Households',
