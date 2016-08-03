@@ -315,6 +315,11 @@ angular.module('fluro.types')
                 key: 'expiryDate',
                 renderer: 'expiry'
             },
+            {
+                title: 'Auto Renew',
+                key: 'renew',
+                renderer: 'boolean'
+            },
             // {
             //     title: 'Renews',
             //     key: 'renew'
