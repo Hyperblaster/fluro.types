@@ -316,7 +316,7 @@ angular.module('fluro.types')
                 renderer: 'expiry'
             },
             {
-                title: 'Auto Renew',
+                title: 'Renew',
                 key: 'renew',
                 renderer: 'boolean'
             },
