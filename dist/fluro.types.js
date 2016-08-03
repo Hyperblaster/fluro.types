@@ -1042,7 +1042,7 @@ angular.module('fluro.types')
                 .compact()
                 .filter(function(child) {
 
-                    var yes = FluroAccess.canAccess(child.path);
+                    var yes = FluroAccess.canAccess(child.definitionName);
                     console.log('CAN ACCESS?', child, yes);
 
                     return yes;
