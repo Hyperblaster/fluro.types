@@ -265,7 +265,7 @@ angular.module('fluro.types')
                     key: 'dob',
                     renderer:'age',
                 }, {
-                    title: 'Family',
+                    title: 'Family Household',
                     key: 'family'
                 },
                 /**
