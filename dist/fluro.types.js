@@ -48,6 +48,14 @@ angular.module('fluro.types')
             columns: [{
                 title: 'Names',
                 key: 'firstLine'
+            },
+            {
+                title: 'Address',
+                key: 'address.addressLine1'
+            },
+            {
+                title: 'Suburb',
+                key: 'address.suburb'
             }],
             viewModes: ['duplicates', 'map']
 
