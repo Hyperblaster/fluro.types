@@ -39,6 +39,7 @@ angular.module('fluro.types')
             //     title: 'Parent',
             //     key: 'parent'
             // }],
+            viewModes: ['process']
         });
 
         controller.types.push({
