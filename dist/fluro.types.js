@@ -1146,11 +1146,11 @@ angular.module('fluro.types')
                 return item.group;
             })
             .value();
-
+            
+            console.log('GROUP MENU TREE', controller.menuTree)
 
     }
 
-            console.log('GROUP MENU TREE', controller.menuTree)
     ///////////////////
 
     controller.getIcon = function(type) {
