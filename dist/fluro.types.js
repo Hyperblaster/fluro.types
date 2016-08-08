@@ -1145,8 +1145,21 @@ angular.module('fluro.types')
             .groupBy(function(item) {
                 return item.group;
             })
+            .reduce(function(results, group, key) {
+
+                var section = {
+                    title:key,
+                    items:group,
+                }
+
+                return results;
+
+            }, [])
+            .sortBy(function(section) {
+                return section.title;
+            })
             .value();
-            
+
             console.log('GROUP MENU TREE', controller.menuTree)
 
     }
