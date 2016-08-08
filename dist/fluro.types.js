@@ -42,6 +42,7 @@ angular.module('fluro.types')
             //     key: 'parent'
             // }],
             viewModes: ['process', 'default'],
+            group:'Config'
         });
 
         controller.types.push({
@@ -511,7 +512,7 @@ angular.module('fluro.types')
                 title: 'Last Name',
                 key: 'contact.lastName'
             }],
-            group:'People',
+            group:'Interactions',
         })
 
         controller.types.push({
@@ -1142,6 +1143,7 @@ angular.module('fluro.types')
                 }
             })
             .compact()
+            /**
             .groupBy(function(item) {
                 return item.group;
             })
@@ -1159,9 +1161,10 @@ angular.module('fluro.types')
             .sortBy(function(section) {
                 return section.title;
             })
+            /**/
             .value();
 
-            console.log('GROUP MENU TREE', controller.menuTree)
+            // console.log('GROUP MENU TREE', controller.menuTree)
 
     }
 
