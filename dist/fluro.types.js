@@ -43,7 +43,7 @@ angular.module('fluro.types')
             },
             {
                 title: 'Type',
-                key: 'item.item._type'
+                key: 'item._type'
             }],
             filters: [{
                 title: 'State',
@@ -51,7 +51,7 @@ angular.module('fluro.types')
             },
             {
                 title: 'Type',
-                key: 'item.item._type'
+                key: 'item._type'
             }],
             viewModes: ['process', 'default'],
             group:'Config'
