@@ -1151,6 +1151,7 @@ angular.module('fluro.types')
                     title:key,
                     items:group,
                 }
+                results.push(section);
 
                 return results;
 
