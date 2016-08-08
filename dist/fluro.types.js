@@ -37,10 +37,10 @@ angular.module('fluro.types')
             singular: 'Process',
             plural: 'Processes',
             path: 'process',
-            // columns: [{
-            //     title: 'Parent',
-            //     key: 'parent'
-            // }],
+            columns: [{
+                title: 'Current State',
+                key: 'state'
+            }],
             viewModes: ['process', 'default'],
             group:'Config'
         });
