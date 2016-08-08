@@ -1147,9 +1147,10 @@ angular.module('fluro.types')
             })
             .value();
 
+
     }
 
-
+            console.log('GROUP MENU TREE', controller.menuTree)
     ///////////////////
 
     controller.getIcon = function(type) {
