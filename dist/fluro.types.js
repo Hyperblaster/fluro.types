@@ -18,6 +18,7 @@ angular.module('fluro.types')
                 title: 'Applications',
                 key: 'applicationKeys'
             }],
+            group:'Permissions'
         })
 
 
@@ -29,6 +30,7 @@ angular.module('fluro.types')
                 title: 'Parent',
                 key: 'parent'
             }],
+            group:'Posts'
         })
 
         controller.types.push({
@@ -39,7 +41,7 @@ angular.module('fluro.types')
             //     title: 'Parent',
             //     key: 'parent'
             // }],
-            viewModes: ['process', 'default']
+            viewModes: ['process', 'default'],
         });
 
         controller.types.push({
@@ -58,8 +60,8 @@ angular.module('fluro.types')
                 title: 'Suburb',
                 key: 'address.suburb'
             }],
-            viewModes: ['duplicates', 'map']
-
+            viewModes: ['duplicates', 'map'],
+            group:'People'
         })
 
 
@@ -68,6 +70,7 @@ angular.module('fluro.types')
             singular: 'Scheduled Task',
             plural: 'Scheduled Tasks',
             path: 'task',
+            group:'Config'
         })
 
         controller.types.push({
@@ -96,12 +99,14 @@ angular.module('fluro.types')
                     renderer: 'time'
                 }
             ],
+            group:'People'
         })
 
         controller.types.push({
             singular: 'Reaction',
             plural: 'Reactions',
             path: 'reaction',
+            group:'Config'
         })
 
         controller.types.push({
@@ -118,7 +123,8 @@ angular.module('fluro.types')
             }, {
                 title: 'Status',
                 key: 'status'
-            }]
+            }],
+            group:'Permissions'
         })
 
         controller.types.push({
@@ -156,7 +162,8 @@ angular.module('fluro.types')
             key: 'assignments'
         }
         /**/
-            ]
+            ],
+            group:'People'
         })
 
         controller.types.push({
@@ -195,7 +202,8 @@ angular.module('fluro.types')
                     renderer: 'multi'
 
                 }
-            ]
+            ],
+            group:'Events'
         })
 
         controller.types.push({
@@ -209,7 +217,8 @@ angular.module('fluro.types')
             filters: [{
                 title: 'Syntax',
                 key: 'syntax'
-            }]
+            }],
+            group:'Config'
         })
 
         controller.types.push({
@@ -224,6 +233,7 @@ angular.module('fluro.types')
             title: 'Syntax',
             key: 'syntax'
         }]*/
+            group:'Config'
         })
 
 
@@ -234,7 +244,8 @@ angular.module('fluro.types')
             columns: [{
                 title: 'Limit',
                 key: 'limit'
-            }]
+            }],
+            group:'Config'
         })
 
 
@@ -245,13 +256,15 @@ angular.module('fluro.types')
             // columns: [{
             //     title: 'Limit',
             //     key: 'limit'
-            // }]
+            // }],
+            group:'Config'
         })
 
         controller.types.push({
             singular: 'Package',
             plural: 'Packages',
             path: 'package',
+            group:'Products',
         })
 
         controller.types.push({
@@ -289,7 +302,8 @@ angular.module('fluro.types')
                 title: 'Gender',
                 key: 'gender'
             }],
-            viewModes: ['duplicates']
+            viewModes: ['duplicates'],
+            group:'People',
         })
 
         controller.types.push({
@@ -302,7 +316,8 @@ angular.module('fluro.types')
             }, {
                 title: 'Last Name',
                 key: 'contact.lastName'
-            }]
+            }],
+            group:'People',
         })
 
 
@@ -365,7 +380,8 @@ angular.module('fluro.types')
             {
                 title: 'Tags',
                 key: 'tags'
-            }]
+            }],
+            group:'Products',
         })
 
         controller.types.push({
@@ -382,7 +398,8 @@ angular.module('fluro.types')
             filters: [{
                 title: 'License',
                 key: 'license'
-            }]
+            }],
+            group:'Products',
         })
 
         controller.types.push({
@@ -402,7 +419,8 @@ angular.module('fluro.types')
             // filters: [{
             //     title: 'License',
             //     key: 'license'
-            // }]
+            // }],
+            group:'Products',
         })
 
 
@@ -438,7 +456,8 @@ angular.module('fluro.types')
             }, {
                 title: 'Mode',
                 key: 'mode'
-            }]
+            }],
+            group:'Products',
         })
 
         controller.types.push({
@@ -460,7 +479,8 @@ angular.module('fluro.types')
                     title: 'Domain',
                     key: 'domain',
                 },
-            ]
+            ],
+            group:'Config',
         })
 
 
@@ -475,7 +495,8 @@ angular.module('fluro.types')
             filters: [{
                 title: 'Module',
                 key: 'module'
-            }]
+            }],
+            group:'Config',
         })
 
 
@@ -489,7 +510,8 @@ angular.module('fluro.types')
             }, {
                 title: 'Last Name',
                 key: 'contact.lastName'
-            }, ]
+            }],
+            group:'People',
         })
 
         controller.types.push({
@@ -515,13 +537,15 @@ angular.module('fluro.types')
             filters: [{
                 title: 'Basic Type',
                 key: 'parentType'
-            }]
+            }],
+            group:'Config',
         })
 
         controller.types.push({
             singular: 'Realm',
             plural: 'Realms',
             path: 'realm',
+            group:'Config',
         })
 
 
@@ -547,6 +571,7 @@ angular.module('fluro.types')
                 title: 'Policies',
                 key: 'policies'
             }],
+            group:'Permissions',
         })
 
         controller.types.push({
@@ -578,7 +603,8 @@ angular.module('fluro.types')
             filters: [{
                 title: 'Policies',
                 key: 'policies'
-            }]
+            }],
+            group:'Permissions',
         })
 
 
@@ -605,7 +631,8 @@ angular.module('fluro.types')
                 title: 'Rooms',
                 key: 'rooms',
             }],
-            viewModes: ['calendar', 'cards', 'tracks']
+            viewModes: ['calendar', 'cards', 'tracks'],
+            group:'Events',
         })
 
 
@@ -622,7 +649,8 @@ angular.module('fluro.types')
             //     title: 'Rooms',
             //     key: 'rooms',
             // }],
-            // viewModes: ['calendar', 'cards']
+            // viewModes: ['calendar', 'cards'],
+            group:'Events',
         })
 
 
@@ -651,8 +679,8 @@ angular.module('fluro.types')
                 title: 'Country',
                 key: 'country'
             }],
-            viewModes: ['map']
-
+            viewModes: ['map'],
+            group:'Events',
         })
 
         // controller.types.push({
@@ -674,7 +702,8 @@ angular.module('fluro.types')
             columns: [{
                 title: 'Items',
                 key: 'items.length'
-            }, ]
+            }],
+            group:'Content',
         })
 
         controller.types.push({
@@ -696,7 +725,8 @@ angular.module('fluro.types')
                 renderer: 'multi',
             }
 /**/
-            ]
+            ],
+            group:'Content',
         })
 
 
@@ -722,7 +752,8 @@ angular.module('fluro.types')
                 renderer: 'multi',
             }
 /**/
-            ]
+            ],
+            group:'Events',
         })
 
         controller.types.push({
@@ -748,7 +779,8 @@ angular.module('fluro.types')
             filters: [{
                 title: 'File Type',
                 key: 'extension'
-            }]
+            }],
+            group:'Assets',
         })
 
         controller.types.push({
@@ -772,6 +804,7 @@ angular.module('fluro.types')
                     key: 'author.name'
                 }
             ],
+            group:'Config',
         })
 
         controller.types.push({
@@ -808,8 +841,8 @@ angular.module('fluro.types')
                 title: 'Asset Type',
                 key: 'assetType'
             }],
-            viewModes: ['grid']
-
+            viewModes: ['grid'],
+            group:'Assets',
         })
 
         controller.types.push({
@@ -843,7 +876,8 @@ angular.module('fluro.types')
             }, {
                 title: 'Asset Type',
                 key: 'assetType'
-            }]
+            }],
+            group:'Assets',
         })
 
         controller.types.push({
@@ -877,7 +911,8 @@ angular.module('fluro.types')
                 title: 'Asset Type',
                 key: 'assetType'
             }],
-            viewModes: ['grid']
+            viewModes: ['grid'],
+            group:'Assets',
         })
 
         controller.types.push({
@@ -892,7 +927,8 @@ angular.module('fluro.types')
                 renderer: 'multi',
             }, 
             /**/
-            ]
+            ],
+            group:'Sites',
         })
 
         /////////////////////////////////////
@@ -1106,9 +1142,13 @@ angular.module('fluro.types')
                 }
             })
             .compact()
+            .groupBy(function(item) {
+                return item.group;
+            })
             .value();
 
     }
+
 
     ///////////////////
 
