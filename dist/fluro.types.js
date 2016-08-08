@@ -41,6 +41,10 @@ angular.module('fluro.types')
                 title: 'Current State',
                 key: 'state'
             }],
+            filters: [{
+                title: 'State',
+                key: 'state'
+            }],
             viewModes: ['process', 'default'],
             group:'Config'
         });
