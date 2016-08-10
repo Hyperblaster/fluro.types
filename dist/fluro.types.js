@@ -83,7 +83,7 @@ angular.module('fluro.types')
             singular: 'Scheduled Task',
             plural: 'Scheduled Tasks',
             path: 'task',
-            group:'Config'
+            group:'Developer'
         })
 
         controller.types.push({
@@ -231,7 +231,7 @@ angular.module('fluro.types')
                 title: 'Syntax',
                 key: 'syntax'
             }],
-            group:'Config'
+            group:'Developer'
         })
 
         controller.types.push({
@@ -246,7 +246,7 @@ angular.module('fluro.types')
             title: 'Syntax',
             key: 'syntax'
         }]*/
-            group:'Config'
+            group:'Developer'
         })
 
 
@@ -258,7 +258,7 @@ angular.module('fluro.types')
                 title: 'Limit',
                 key: 'limit'
             }],
-            group:'Config'
+            group:'Developer'
         })
 
 
@@ -509,7 +509,7 @@ angular.module('fluro.types')
                 title: 'Module',
                 key: 'module'
             }],
-            group:'Config',
+            group:'Developer',
         })
 
 
