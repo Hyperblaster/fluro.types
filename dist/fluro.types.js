@@ -30,7 +30,7 @@ angular.module('fluro.types')
                 title: 'Parent',
                 key: 'parent'
             }],
-            group:'Posts'
+            group:'Content'
         })
 
         controller.types.push({
@@ -706,6 +706,7 @@ angular.module('fluro.types')
             singular: 'Account',
             plural: 'Accounts',
             path: 'account',
+            group:'Developer',
         })
 
         controller.types.push({
@@ -941,7 +942,7 @@ angular.module('fluro.types')
             }, 
             /**/
             ],
-            group:'Sites',
+            group:'Developer',
         })
 
         /////////////////////////////////////
