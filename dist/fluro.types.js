@@ -112,7 +112,7 @@ angular.module('fluro.types')
                     renderer: 'time'
                 }
             ],
-            group:'People'
+            group:'Events'
         })
 
         controller.types.push({
@@ -524,7 +524,7 @@ angular.module('fluro.types')
                 title: 'Last Name',
                 key: 'contact.lastName'
             }],
-            group:'Interactions',
+            group:'People',
         })
 
         controller.types.push({
@@ -793,7 +793,7 @@ angular.module('fluro.types')
                 title: 'File Type',
                 key: 'extension'
             }],
-            group:'Assets',
+            group:'Content',
         })
 
         controller.types.push({
@@ -855,7 +855,7 @@ angular.module('fluro.types')
                 key: 'assetType'
             }],
             viewModes: ['grid'],
-            group:'Assets',
+            group:'Content',
         })
 
         controller.types.push({
@@ -890,7 +890,7 @@ angular.module('fluro.types')
                 title: 'Asset Type',
                 key: 'assetType'
             }],
-            group:'Assets',
+            group:'Content',
         })
 
         controller.types.push({
@@ -925,7 +925,7 @@ angular.module('fluro.types')
                 key: 'assetType'
             }],
             viewModes: ['grid'],
-            group:'Assets',
+            group:'Content',
         })
 
         controller.types.push({
