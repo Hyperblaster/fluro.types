@@ -34,6 +34,13 @@ angular.module('fluro.types')
         })
 
         controller.types.push({
+            singular: 'View',
+            plural: 'Views',
+            path: 'view',
+            group:'Config'
+        })
+
+        controller.types.push({
             singular: 'Process',
             plural: 'Processes',
             path: 'process',
