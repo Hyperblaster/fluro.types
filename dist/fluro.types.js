@@ -23,7 +23,8 @@ angular.module('fluro.types')
 
 
         controller.types.push({
-            sub: 'application',
+            // sub: 'application',
+            hideFromMenu: true,
             singular: 'Distributed Application',
             plural: 'Distributed Applications',
             path: 'distributed',
@@ -768,6 +769,7 @@ angular.module('fluro.types')
 
 
         controller.types.push({
+            sub:'event',
             singular: 'Attendance',
             plural: 'Attendance Reports',
             path: 'attendance',
@@ -1128,6 +1130,9 @@ angular.module('fluro.types')
 
                 var children = [];
 
+
+                //////////////////////////////////////////////////
+
                 // //Add any submenu items
                 var subChildren = _.filter(controller.types, function(typeEntry) {
                     return (typeEntry.sub == type.path);
@@ -1139,8 +1144,12 @@ angular.module('fluro.types')
                 //     children = children.concat(subChildren);
                 // }
 
+                //////////////////////////////////////////////////
+
                 //Then append all the child types
                 children = children.concat(grouped[type.path]);
+
+                //////////////////////////////////////////////////
 
                 children = _.chain(children)
                 .compact()
