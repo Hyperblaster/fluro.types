@@ -23,6 +23,7 @@ angular.module('fluro.types')
 
 
         controller.types.push({
+            sub: 'application',
             singular: 'Distributed Application',
             plural: 'Distributed Applications',
             path: 'distributed',
