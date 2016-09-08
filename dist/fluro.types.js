@@ -30,7 +30,7 @@ angular.module('fluro.types')
             path: 'distribution',
             columns: [{
                 title: 'Distribution Key',
-                key: 'key'
+                key: 'distributionKey'
             }],
             group:'Config'
         })
