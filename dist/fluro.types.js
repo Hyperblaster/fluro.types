@@ -1121,7 +1121,7 @@ angular.module('fluro.types')
                     /**/
 
         var allTypes = _.filter(controller.types, function(type) {
-            return !type.hideFromMenu;
+            return !type.hideFromMenu && !type.sub;
         });
 
         controller.menuTree = _.chain(allTypes).map(function(type) {
@@ -1129,9 +1129,11 @@ angular.module('fluro.types')
                 var children = [];
 
                 // //Add any submenu items
-                // var subChildren = _.filter(allTypes, function(typeEntry) {
-                //     return (typeEntry.sub == type.path);
-                // });
+                var subChildren = _.filter(controller.types, function(typeEntry) {
+                    return (typeEntry.sub == type.path);
+                });
+
+                children = children.concat(subChildren);
 
                 // if(subChildren && subChildren.length) {
                 //     children = children.concat(subChildren);
