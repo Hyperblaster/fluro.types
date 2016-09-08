@@ -25,9 +25,9 @@ angular.module('fluro.types')
         controller.types.push({
             // sub: 'application',
             hideFromMenu: true,
-            singular: 'Distribution',
-            plural: 'Distributions',
-            path: 'distribution',
+            singular: 'Deployment',
+            plural: 'Deployments',
+            path: 'deployment',
             columns: [{
                 title: 'Distribution Key',
                 key: 'distributionKey'
