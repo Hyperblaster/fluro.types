@@ -27,7 +27,7 @@ angular.module('fluro.types')
             plural: 'Distributed Applications',
             path: 'distributed',
             columns: [{
-                title: 'Distribution ID',
+                title: 'Distribution Key',
                 key: 'key'
             }],
             group:'Config'
