@@ -23,6 +23,18 @@ angular.module('fluro.types')
 
 
         controller.types.push({
+            singular: 'Distributed Application',
+            plural: 'Distributed Applications',
+            path: 'distributed',
+            columns: [{
+                title: 'Distribution ID',
+                key: 'key'
+            }],
+            group:'Config'
+        })
+
+
+        controller.types.push({
             singular: 'Post',
             plural: 'Posts',
             path: 'post',
