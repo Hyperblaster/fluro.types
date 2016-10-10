@@ -31,6 +31,9 @@ angular.module('fluro.types')
             columns: [{
                 title: 'Distribution Key',
                 key: 'distributionKey'
+            },{
+                title: 'Revision',
+                key: 'commitID'
             }],
             group:'Config'
         })
@@ -1155,7 +1158,7 @@ angular.module('fluro.types')
                 .compact()
                 .filter(function(child) {
 
-                    var yes = FluroAccess.canAccess(child.definitionName);
+                    var yes = FluroAccess.canAccess(child.definitionName, child.parentType);
                     // console.log('CAN ACCESS?', child.definitionName, yes);
 
                     return yes;
