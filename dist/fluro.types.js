@@ -1125,6 +1125,8 @@ angular.module('fluro.types')
 
                     /**/
 
+    console.log('GROUPEd', grouped);
+
         var allTypes = _.filter(controller.types, function(type) {
             return !type.hideFromMenu && !type.sub;
         });
@@ -1152,13 +1154,15 @@ angular.module('fluro.types')
                 //Then append all the child types
                 children = children.concat(grouped[type.path]);
 
+
+
                 //////////////////////////////////////////////////
 
                 children = _.chain(children)
                 .compact()
                 .filter(function(child) {
 
-                    console.log('Test child', child);
+                    // console.log('Test child', child);
                     var yes = FluroAccess.canAccess(child.definitionName, child.parentType);
                     // console.log('CAN ACCESS?', child.definitionName, yes);
 
