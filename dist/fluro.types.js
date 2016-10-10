@@ -1069,7 +1069,8 @@ angular.module('fluro.types')
         //controller.refreshRequest = true;
 
         //Clean up once done
-        controller.definedTypes.$promise.then(function() {
+        controller.definedTypes.$promise.then(function(ty) {
+            console.log('Git defined types', ty)
             controller.refreshMenuTree();
             //delete controller.refreshRequest;
         })
@@ -1135,7 +1136,6 @@ angular.module('fluro.types')
 
                 var children = [];
 
-                console.log('Types', type)
                 //////////////////////////////////////////////////
 
                 // //Add any submenu items
