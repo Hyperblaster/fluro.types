@@ -1035,14 +1035,14 @@ angular.module('fluro.types')
 
     controller.sideLoadDefinition = function(definition) {
 
-      //  console.log('Side Load Definition', definition)
+      //  //console.log('Side Load Definition', definition)
         if (controller.definedTypes) {
 
             var exists = _.some(controller.definedTypes, {
                 _id: definition._id
             });
             if (!exists) {
-                console.log('Side loaded', definition)
+                //console.log('Side loaded', definition)
                 controller.definedTypes.push(definition);
                 controller.refreshMenuTree();
             }
@@ -1054,7 +1054,7 @@ angular.module('fluro.types')
 
     controller.refreshDefinedTypes = function() {
 
-        // console.log('Refresh defined types')
+        // //console.log('Refresh defined types')
         //if (controller.definedTypes) {
         //   return controller.definedTypes;
         //}
@@ -1070,7 +1070,7 @@ angular.module('fluro.types')
 
         //Clean up once done
         controller.definedTypes.$promise.then(function(ty) {
-            // console.log('Git defined types', ty)
+            // //console.log('Git defined types', ty)
             controller.refreshMenuTree();
             //delete controller.refreshRequest;
         })
@@ -1105,15 +1105,15 @@ angular.module('fluro.types')
         $scope.thread = _.chain(res)
                     .map(function(post) {
 
-                        // console.log('POST', post._id, post.reply);
+                        // //console.log('POST', post._id, post.reply);
                         //Find all replies to this post
                         post.thread = _.filter(allPosts, function(sub) {
                             return (sub.reply == post._id);
                         });
 
-                        // console.log('THREAD TEST', post.thread);
+                        // //console.log('THREAD TEST', post.thread);
 
-                        // console.log('find all replies that match', post._id)
+                        // //console.log('find all replies that match', post._id)
 
                         //If it's a top level post then send it back
                         if(!post.reply) {
@@ -1126,7 +1126,7 @@ angular.module('fluro.types')
 
                     /**/
 
-    // console.log('GROUPEd', grouped, controller.definedTypes);
+    // //console.log('GROUPEd', grouped, controller.definedTypes);
 
         var allTypes = _.filter(controller.types, function(type) {
             return !type.hideFromMenu && !type.sub;
@@ -1162,9 +1162,9 @@ angular.module('fluro.types')
                 .compact()
                 .filter(function(child) {
 
-                    // console.log('Test child', child);
+                    // //console.log('Test child', child);
                     var yes = FluroAccess.canAccess(child.definitionName, child.parentType);
-                    // console.log('CAN ACCESS?', child.definitionName, yes);
+                    // //console.log('CAN ACCESS?', child.definitionName, yes);
 
                     return yes;
                 })
@@ -1189,10 +1189,10 @@ angular.module('fluro.types')
                 ////////////////////////////////////////////////////
 
                 if (canAccess || (type.children && type.children.length)) {
-                    // console.log('Can access', type.path, 'because of ', type.children.length)
+                    // //console.log('Can access', type.path, 'because of ', type.children.length)
                     return type;
                 } else {
-                    // console.log('Cant access', type.path, 'because')
+                    // //console.log('Cant access', type.path, 'because')
                     return null;
                 }
             })
@@ -1218,7 +1218,7 @@ angular.module('fluro.types')
             /**/
             .value();
 
-            // console.log('GROUP MENU TREE', controller.menuTree)
+            // //console.log('GROUP MENU TREE', controller.menuTree)
 
     }
 
