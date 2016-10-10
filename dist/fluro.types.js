@@ -1125,7 +1125,7 @@ angular.module('fluro.types')
 
                     /**/
 
-    console.log('GROUPEd', grouped);
+    console.log('GROUPEd', grouped, controller.definedTypes);
 
         var allTypes = _.filter(controller.types, function(type) {
             return !type.hideFromMenu && !type.sub;
