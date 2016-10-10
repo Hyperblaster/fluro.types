@@ -1070,7 +1070,7 @@ angular.module('fluro.types')
 
         //Clean up once done
         controller.definedTypes.$promise.then(function(ty) {
-            console.log('Git defined types', ty)
+            // console.log('Git defined types', ty)
             controller.refreshMenuTree();
             //delete controller.refreshRequest;
         })
