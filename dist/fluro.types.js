@@ -599,9 +599,11 @@ angular.module('fluro.types')
                 title: 'Extra permissions',
                 key: 'permissionSets',
                 renderer: 'permissionSet',
-            }, {
-                title: 'Realm',
-                key: 'realms'
+            }, 
+            {
+                title: 'Account Type',
+                key: 'username',
+                renderer: 'userType',
             }, {
                 title: 'Status',
                 key: 'status'
@@ -1155,7 +1157,6 @@ angular.module('fluro.types')
                 children = children.concat(grouped[type.path]);
 
 
-
                 //////////////////////////////////////////////////
 
                 children = _.chain(children)
@@ -1164,6 +1165,7 @@ angular.module('fluro.types')
 
                     // //console.log('Test child', child);
                     var yes = FluroAccess.canAccess(child.definitionName, child.parentType);
+                    
                     // //console.log('CAN ACCESS?', child.definitionName, yes);
 
                     return yes;
