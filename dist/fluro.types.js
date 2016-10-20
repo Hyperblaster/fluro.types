@@ -152,10 +152,7 @@ angular.module('fluro.types')
             singular: 'Policy',
             plural: 'Permission Policies',
             path: 'policy',
-            filters: [{
-                title: 'Inheritable',
-                key: 'inheritable'
-            }],
+            
             columns: [{
                 title: 'Permissions',
                 key: 'permissionSets',
@@ -163,9 +160,6 @@ angular.module('fluro.types')
             }, {
                 title: 'Realm',
                 key: 'realms'
-            }, {
-                title: 'Inheritable',
-                key: 'inheritable'
             },
             {
                 title: 'Status',
@@ -593,6 +587,14 @@ angular.module('fluro.types')
             plural: 'Realms',
             path: 'realm',
             group:'Config',
+            filters: [{
+                title: 'Inheritable',
+                key: 'inheritable'
+            }],
+            columns: [{
+                title: 'Inheritable',
+                key: 'inheritable'
+            }],
         })
 
 
