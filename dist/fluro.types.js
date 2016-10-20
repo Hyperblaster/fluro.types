@@ -601,7 +601,7 @@ angular.module('fluro.types')
                 renderer: 'permissionSet',
             }, 
             {
-                title: 'Account Type',
+                title: 'User',
                 key: 'username',
                 renderer: 'userType',
             }, {
@@ -626,6 +626,7 @@ angular.module('fluro.types')
             renderer: 'permissionSet',
         }, 
         */
+       /**
                 {
                     title: 'Permission Policies',
                     key: 'policies'
@@ -633,10 +634,22 @@ angular.module('fluro.types')
                     title: 'Extra permissions',
                     key: 'permissionSets',
                     renderer: 'permissionSet',
-                }, {
+                }, 
+                
+                {
                     title: 'Realm',
                     key: 'realms'
-                }, {
+                },
+                /**/
+                {
+                    title: 'Email Address',
+                    key: 'email'
+                },
+                {
+                    title: 'Account',
+                    key: 'account'
+                },
+                {
                     title: 'Status',
                     key: 'status'
                 }
