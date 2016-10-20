@@ -152,6 +152,10 @@ angular.module('fluro.types')
             singular: 'Policy',
             plural: 'Permission Policies',
             path: 'policy',
+            filters: [{
+                title: 'Inheritable',
+                key: 'inheritable'
+            }],
             columns: [{
                 title: 'Permissions',
                 key: 'permissionSets',
@@ -160,6 +164,10 @@ angular.module('fluro.types')
                 title: 'Realm',
                 key: 'realms'
             }, {
+                title: 'Inheritable',
+                key: 'inheritable'
+            },
+            {
                 title: 'Status',
                 key: 'status'
             }],
@@ -704,6 +712,10 @@ angular.module('fluro.types')
             //     key: 'rooms',
             // }],
             // viewModes: ['calendar', 'cards'],
+            columns: [{
+                title: 'Default Start Time',
+                key: 'defaultStartTime'
+            }],
             group:'Events',
         })
 
