@@ -762,7 +762,14 @@ angular.module('fluro.types')
             plural: 'Accounts',
             path: 'account',
             group:'Developer',
-        })
+        });
+
+        controller.types.push({
+            singular: 'Onboarding Gateway',
+            plural: 'Onboarding Gateways',
+            path: 'onboard',
+            group:'Developer',
+        });
 
         controller.types.push({
             singular: 'Collection',
