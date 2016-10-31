@@ -471,10 +471,15 @@ angular.module('fluro.types')
             path: 'transaction',
             columns: [{
                     title: 'Amount',
-                    key: 'amount'
+                    key: 'amount',
+                    renderer:'currency',
                 },{
                     title: 'Total',
-                    key: 'total'
+                    key: 'total',
+                    renderer:'currency',
+                },{
+                    title: 'Currency',
+                    key: 'currency',
                 }, {
                     title: 'Payment',
                     key: 'paymentStatus'
