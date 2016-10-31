@@ -472,6 +472,9 @@ angular.module('fluro.types')
             columns: [{
                     title: 'Amount',
                     key: 'amount'
+                },{
+                    title: 'Total',
+                    key: 'total'
                 }, {
                     title: 'Payment',
                     key: 'paymentStatus'
