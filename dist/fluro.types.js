@@ -502,6 +502,9 @@ angular.module('fluro.types')
             filters: [{
                 title: 'Payment Status',
                 key: 'paymentStatus'
+            },{
+                title: 'Currency',
+                key: 'currency'
             }, {
                 title: 'Mode',
                 key: 'mode'
