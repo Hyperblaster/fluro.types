@@ -482,10 +482,12 @@ angular.module('fluro.types')
                     key: 'currency',
                 }, {
                     title: 'Payment',
-                    key: 'paymentStatus'
+                    key: 'paymentStatus',
+                    renderer:'paymentStatus',
                 }, {
                     title: 'Mode',
-                    key: 'mode'
+                    key: 'mode',
+                    renderer:'paymentMode',
                 }, {
                     title: 'Date',
                     key: 'created',
@@ -501,7 +503,8 @@ angular.module('fluro.types')
             ],
             filters: [{
                 title: 'Payment Status',
-                key: 'paymentStatus'
+                key: 'paymentStatus',
+
             },{
                 title: 'Currency',
                 key: 'currency'
