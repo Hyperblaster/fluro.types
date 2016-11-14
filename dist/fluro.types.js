@@ -714,26 +714,7 @@ angular.module('fluro.types')
         })
 
 
-        controller.types.push({
-            // sub: 'event',
-            hideFromMenu: true,
-            singular: 'Event Track',
-            plural: 'Event Tracks',
-            path: 'eventtrack',
-            // filters: [{
-            //     title: 'Locations',
-            //     key: 'locations',
-            // }, {
-            //     title: 'Rooms',
-            //     key: 'rooms',
-            // }],
-            // viewModes: ['calendar', 'cards'],
-            columns: [{
-                title: 'Default Start Time',
-                key: 'defaultStartTime'
-            }],
-            group:'Events',
-        })
+        
 
 
 
@@ -844,6 +825,28 @@ angular.module('fluro.types')
             }
 /**/
             ],
+            group:'Events',
+        })
+
+
+        controller.types.push({
+            sub: 'event',
+            // hideFromMenu: true,
+            singular: 'Event Track',
+            plural: 'Event Tracks',
+            path: 'eventtrack',
+            // filters: [{
+            //     title: 'Locations',
+            //     key: 'locations',
+            // }, {
+            //     title: 'Rooms',
+            //     key: 'rooms',
+            // }],
+            // viewModes: ['calendar', 'cards'],
+            columns: [{
+                title: 'Default Start Time',
+                key: 'defaultStartTime'
+            }],
             group:'Events',
         })
 
