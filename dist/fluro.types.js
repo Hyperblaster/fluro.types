@@ -1314,6 +1314,16 @@ angular.module('fluro.types')
     }
 
 
+    ///////////////////
+
+    controller.getSubTypes = function(parentType) {
+
+        return _.filter(controller.definedTypes, function(type) {
+            return type.parentType == parentType;
+        })
+    }
+
+
 
 
     ///////////////////
