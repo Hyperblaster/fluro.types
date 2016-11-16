@@ -22,21 +22,7 @@ angular.module('fluro.types')
         })
 
 
-        controller.types.push({
-            // sub: 'application',
-            hideFromMenu: true,
-            singular: 'Deployment',
-            plural: 'Deployments',
-            path: 'deployment',
-            columns: [{
-                title: 'Distribution Key',
-                key: 'distributionKey'
-            },{
-                title: 'Revision',
-                key: 'commitID'
-            }],
-            group:'Config'
-        })
+        
 
 
         controller.types.push({
@@ -760,11 +746,29 @@ angular.module('fluro.types')
         });
 
         controller.types.push({
+            // sub:'application',
             singular: 'Onboarding Gateway',
             plural: 'Onboarding Gateways',
             path: 'onboard',
             group:'Developer',
         });
+
+
+        controller.types.push({
+            sub:'application',
+            // hideFromMenu: true,
+            singular: 'Deployment',
+            plural: 'Deployments',
+            path: 'deployment',
+            columns: [{
+                title: 'Distribution Key',
+                key: 'distributionKey'
+            },{
+                title: 'Revision',
+                key: 'commitID'
+            }],
+            group:'Config'
+        })
 
         controller.types.push({
             singular: 'Collection',
