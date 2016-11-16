@@ -155,8 +155,8 @@ angular.module('fluro.types')
         })
 
         controller.types.push({
-            singular: 'Team',
-            plural: 'Teams',
+            singular: 'Group / Team',
+            plural: 'Groups / Teams',
             path: 'team',
             columns: [
                 /**{
@@ -164,13 +164,14 @@ angular.module('fluro.types')
                 key: 'realms',
                 renderer: 'multi'
 
-            }, /**/
+            }, 
                 {
                     title: 'Tags',
                     key: 'tags',
                     renderer: 'multi'
 
                 }
+                /**/
             ],
             filters: [
                 /**
