@@ -331,7 +331,7 @@ angular.module('fluro.types')
                 key: 'gender'
             },
             {
-                title: 'Teams',
+                title: 'Groups / Teams',
                 key: 'teams'
             }],
             viewModes: ['duplicates'],
