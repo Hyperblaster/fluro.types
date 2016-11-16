@@ -328,6 +328,10 @@ angular.module('fluro.types')
             filters: [{
                 title: 'Gender',
                 key: 'gender'
+            },
+            {
+                title: 'Teams',
+                key: 'teams'
             }],
             viewModes: ['duplicates'],
             group:'People',
