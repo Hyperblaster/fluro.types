@@ -758,6 +758,21 @@ angular.module('fluro.types')
             group:'Developer',
         });
 
+        controller.types.push({
+            hideFromMenu:true,
+            singular: 'Assignment',
+            plural: 'Assignments',
+            path: 'assignment',
+            columns: [{
+                title: 'Event',
+                key: 'event'
+            },{
+                title: 'Contact',
+                key: 'contact'
+            }],
+            group:'Events'
+        })
+
 
         controller.types.push({
             sub:'application',
