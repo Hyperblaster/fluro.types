@@ -1074,7 +1074,7 @@ angular.module('fluro.types')
     })
 
 
-.service('TypeService', function($q, Fluro, FluroContent, FluroAccess, TypeConfig, $resource) {
+.service('TypeService', ['$q', 'Fluro', 'FluroContent', 'FluroAccess', 'TypeConfig', '$resource', function($q, Fluro, FluroContent, FluroAccess, TypeConfig, $resource) {
 
     var controller = {};
 
@@ -1368,4 +1368,4 @@ angular.module('fluro.types')
     ///////////////////
 
     return controller;
-});
+}]);
