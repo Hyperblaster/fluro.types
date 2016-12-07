@@ -466,6 +466,10 @@ angular.module('fluro.types')
             plural: 'Transactions',
             path: 'transaction',
             columns: [{
+                    title: 'User',
+                    key: 'persona',
+                    renderer:'transactionUser',
+                }, {
                     title: 'Amount',
                     key: 'amount',
                     renderer:'currency',
