@@ -570,7 +570,7 @@ angular.module('fluro.types')
                 title: 'Last Name',
                 key: 'contact.lastName'
             }],
-            group:'People',
+            group:'Forms',
         })
 
         controller.types.push({
