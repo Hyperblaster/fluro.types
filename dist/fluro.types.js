@@ -33,7 +33,7 @@ angular.module('fluro.types')
                 title: 'Parent',
                 key: 'parent'
             }],
-            group:'Content'
+            group:'Interactions'
         })
 
         /**
