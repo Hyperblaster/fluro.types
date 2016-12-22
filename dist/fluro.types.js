@@ -921,7 +921,7 @@ angular.module('fluro.types')
                 title: 'File Type',
                 key: 'extension'
             }],
-            group:'Content',
+            group:'Files',
         })
 
         controller.types.push({
@@ -983,7 +983,7 @@ angular.module('fluro.types')
                 key: 'assetType'
             }],
             viewModes: ['grid'],
-            group:'Content',
+            group:'Files',
         })
 
         controller.types.push({
@@ -1018,7 +1018,7 @@ angular.module('fluro.types')
                 title: 'Asset Type',
                 key: 'assetType'
             }],
-            group:'Content',
+            group:'Files',
         })
 
         controller.types.push({
@@ -1053,7 +1053,7 @@ angular.module('fluro.types')
                 key: 'assetType'
             }],
             viewModes: ['grid'],
-            group:'Content',
+            group:'Files',
         })
 
         controller.types.push({
