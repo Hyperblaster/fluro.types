@@ -86,7 +86,7 @@ angular.module('fluro.types')
                 key: 'address.suburb'
             }],
             viewModes: ['duplicates', 'map'],
-            group:'People'
+            group:'Contacts'
         })
 
 
@@ -191,7 +191,7 @@ angular.module('fluro.types')
         }
         /**/
             ],
-            group:'People'
+            group:'Contacts'
         })
 
         controller.types.push({
@@ -335,7 +335,7 @@ angular.module('fluro.types')
                 key: 'teams'
             }],
             viewModes: ['duplicates'],
-            group:'People',
+            group:'Contacts',
         })
 
         controller.types.push({
@@ -349,7 +349,7 @@ angular.module('fluro.types')
                 title: 'Last Name',
                 key: 'contact.lastName'
             }],
-            group:'People',
+            group:'Contacts',
         })
 
 
