@@ -644,6 +644,7 @@ angular.module('fluro.types')
         })
 
         controller.types.push({
+            hideFromMenu:true,
             singular: 'User',
             plural: 'Users',
             path: 'user',
@@ -850,7 +851,8 @@ angular.module('fluro.types')
 
 
         controller.types.push({
-            sub:'event',
+            hideFromMenu:true,
+            // sub:'event',
             singular: 'Attendance',
             plural: 'Attendance Reports',
             path: 'attendance',
