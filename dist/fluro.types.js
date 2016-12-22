@@ -66,7 +66,7 @@ angular.module('fluro.types')
                 key: 'item._type'
             }],
             viewModes: ['process', 'default'],
-            group:'Config'
+            group:'Contacts'
         });
 
         controller.types.push({
@@ -539,7 +539,7 @@ angular.module('fluro.types')
                     key: 'domain',
                 },
             ],
-            group:'Config',
+            group:'Developer',
         })
 
 
@@ -810,7 +810,7 @@ angular.module('fluro.types')
                 title: 'Revision',
                 key: 'commitID'
             }],
-            group:'Config'
+            group:'Developer'
         })
 
         controller.types.push({
@@ -945,7 +945,7 @@ angular.module('fluro.types')
                     key: 'author.name'
                 }
             ],
-            group:'Config',
+            group:'Content',
         })
 
         controller.types.push({
