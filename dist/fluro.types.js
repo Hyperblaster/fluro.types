@@ -435,10 +435,6 @@ angular.module('fluro.types')
             filters: [{
                 title: 'License',
                 key: 'license'
-            },
-            {
-                title: 'Definition',
-                key: 'definition'
             }],
             group:'Products',
         })
