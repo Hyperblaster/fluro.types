@@ -159,12 +159,11 @@ angular.module('fluro.types')
             plural: 'Groups / Teams',
             path: 'team',
             columns: [
-                /**{
-                title: 'Realms',
-                key: 'realms',
-                renderer: 'multi'
-
-            }, 
+                {
+                    title: 'Provisional',
+                    key: 'allowProvisional',
+                }, 
+            /**
                 {
                     title: 'Tags',
                     key: 'tags',
@@ -174,6 +173,10 @@ angular.module('fluro.types')
                 /**/
             ],
             filters: [
+                {
+                    title: 'Provisional',
+                    key: 'allowProvisional',
+                }, 
                 /**
         {
             title: 'Team members',
