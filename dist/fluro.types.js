@@ -120,7 +120,7 @@ angular.module('fluro.types')
                     renderer: 'time'
                 }, {
                     title: 'Checked out',
-                    key: 'checkout[0].date',
+                    key: 'checkout.0.date',
                     renderer: 'time'
                 }
             ],
