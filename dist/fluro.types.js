@@ -74,22 +74,22 @@ angular.module('fluro.types')
             singular: 'Mailout',
             plural: 'Mailouts',
             path: 'mailout',
-            // columns: [{
-            //     title: 'Current State',
-            //     key: 'state'
-            // },
-            // {
-            //     title: 'Type',
-            //     key: 'item._type'
-            // }],
-            // filters: [{
-            //     title: 'State',
-            //     key: 'state'
-            // },
-            // {
-            //     title: 'Type',
-            //     key: 'item._type'
-            // }],
+            columns: [{
+                title: 'State',
+                key: 'state'
+            },
+            {
+                title: 'Type',
+                key: 'item.definition'
+            },
+            {
+                title: 'Publish Date',
+                key: 'item.publishDate'
+            }],
+            filters: [{
+                title: 'State',
+                key: 'state'
+            }],
             // viewModes: ['process', 'default'],
             group:'Contacts'
         });
