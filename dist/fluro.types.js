@@ -1175,8 +1175,8 @@ angular.module('fluro.types')
       
         if (controller.definedTypes) {
 
-             console.log('Side Load Definition', definition, controller.definedTypes)
-             
+             console.log('Side Load Definition', definition, 'AND', controller.definedTypes)
+
             var exists = _.some(controller.definedTypes, function(type) {
                return type._id == definition._id
             });
