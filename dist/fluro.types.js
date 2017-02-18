@@ -1175,10 +1175,10 @@ angular.module('fluro.types')
        console.log('Side Load Definition', definition)
         if (controller.definedTypes) {
 
-            var exists = _.some(controller.definedTypes, {
-                _id: definition._id
+            var exists = _.some(controller.definedTypes, function(type) {
+               return type._id == definition._id
             });
-            
+
             if (!exists) {
                 console.log('Side loaded', definition)
                 controller.definedTypes.push(definition);
