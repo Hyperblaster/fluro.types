@@ -38,9 +38,9 @@ angular.module('fluro.types')
 
 
         controller.types.push({
-            singular: 'Ticket Type',
-            plural: 'Ticket Types',
-            path: 'tickettype',
+            singular: 'Ticketing',
+            plural: 'Ticketing',
+            path: 'ticketing',
             columns: [
             // {
             //     title: 'Parent',
