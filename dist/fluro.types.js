@@ -605,7 +605,7 @@ angular.module('fluro.types')
                     key: 'domain',
                 },
                 {
-                    title: 'API URL',
+                    title: 'API',
                     key: 'apipath',
                 },
             ],
