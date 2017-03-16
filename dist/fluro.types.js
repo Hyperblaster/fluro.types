@@ -491,8 +491,8 @@ angular.module('fluro.types')
                 title: 'Frequency',
                 key: 'frequency',
             }, {
-                title: 'License',
-                key: 'license'
+                title: 'Licenses',
+                key: 'limit'
             }, {
                 title: 'Purchases',
                 key: 'stats.purchase',
@@ -603,6 +603,10 @@ angular.module('fluro.types')
                 {
                     title: 'Domain',
                     key: 'domain',
+                },
+                {
+                    title: 'API URL',
+                    key: 'apipath',
                 },
             ],
             group:'Developer',
