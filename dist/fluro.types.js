@@ -416,7 +416,7 @@ angular.module('fluro.types')
             columns: [
             {
                 title: 'Purchased By',
-                key: 'purchaser',
+                renderer:'purchaser',
             },
             {
                 title: 'Licenses',
@@ -952,7 +952,7 @@ angular.module('fluro.types')
 
 
         controller.types.push({
-            sub: 'event',
+            // sub: 'event',
             // hideFromMenu: true,
             singular: 'Event Track',
             plural: 'Event Tracks',
