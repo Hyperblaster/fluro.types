@@ -1147,6 +1147,22 @@ angular.module('fluro.types')
             group:'Developer',
         })
 
+        controller.types.push({
+            singular: 'Site Block',
+            plural: 'Site Blocks',
+            path: 'siteblock',
+            columns: [
+                /**
+            {
+                title: 'Realms',
+                key: 'realms',
+                renderer: 'multi',
+            }, 
+            /**/
+            ],
+            group:'Developer',
+        })
+
         /////////////////////////////////////
 
         return {
