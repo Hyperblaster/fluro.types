@@ -1148,6 +1148,7 @@ angular.module('fluro.types')
         })
 
         controller.types.push({
+            sub:'component',
             singular: 'Site Block',
             plural: 'Site Blocks',
             path: 'siteblock',
