@@ -1104,8 +1104,13 @@ angular.module('fluro.types')
                     title: 'File Type',
                     key: 'extension'
                 }, {
+                    title: 'Dimensions',
+                    key: 'width',
+                    renderer: 'dimensions',
+                }, {
                     title: 'Duration',
                     key: 'duration',
+                    renderer:'duration',
                 },
                 /**
             {
