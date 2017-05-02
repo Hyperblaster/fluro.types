@@ -1080,6 +1080,10 @@ angular.module('fluro.types')
                     title: 'File Type',
                     key: 'extension'
                 }, {
+                    title: 'Size',
+                    key: 'filesize',
+                    renderer: 'filesize',
+                }, {
                     title: 'Security',
                     key: 'privacy',
                     renderer: 'privacy',
@@ -1119,6 +1123,11 @@ angular.module('fluro.types')
                 renderer: 'multi',
             },
             /**/
+                {
+                    title: 'Size',
+                    key: 'filesize',
+                    renderer: 'filesize',
+                },
                 {
                     title: 'Security',
                     key: 'privacy',
