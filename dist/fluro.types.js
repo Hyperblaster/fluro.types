@@ -29,10 +29,12 @@ angular.module('fluro.types')
             singular: 'Post',
             plural: 'Posts',
             path: 'post',
-            columns: [{
-                title: 'Parent',
-                key: 'parent'
-            }],
+            columns: [
+            // {
+            //     title: 'Parent',
+            //     key: 'parent'
+            // }
+            ],
             group:'Interactions'
         })
 
