@@ -158,13 +158,14 @@ angular.module('fluro.types')
             singular: 'Checkin',
             plural: 'Checkins',
             path: 'checkin',
-            columns: [{
-                    title: 'Event',
-                    key: 'event'
-                }, {
-                    title: 'Contact',
-                    key: 'contact'
-                },
+            columns: [
+            // {
+            //         title: 'Event',
+            //         key: 'event'
+            //     }, {
+            //         title: 'Contact',
+            //         key: 'contact'
+            //     },
 
                 {
                     title: 'Check in date',
