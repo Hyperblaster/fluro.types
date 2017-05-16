@@ -39,35 +39,35 @@ angular.module('fluro.types')
         })
 
 
-        controller.types.push({
-            singular: 'Ticketing',
-            plural: 'Ticketing',
-            path: 'ticketing',
-            columns: [
-            // {
-            //     title: 'Parent',
-            //     key: 'parent'
-            // }
-            ],
-            group:'Events'
-        })
+        // controller.types.push({
+        //     singular: 'Ticketing',
+        //     plural: 'Ticketing',
+        //     path: 'ticketing',
+        //     columns: [
+        //     // {
+        //     //     title: 'Parent',
+        //     //     key: 'parent'
+        //     // }
+        //     ],
+        //     group:'Events'
+        // })
 
-        controller.types.push({
-            singular: 'Ticket',
-            plural: 'Tickets',
-            path: 'ticketpurchase',
-            columns: [
-            {
-                title: 'Primary Contact',
-                key: 'contact'
-            },
-            // {
-            //     title: 'Primary Contact',
-            //     key: 'contact'
-            // }
-            ],
-            group:'Events'
-        })
+        // controller.types.push({
+        //     singular: 'Ticket',
+        //     plural: 'Tickets',
+        //     path: 'ticketpurchase',
+        //     columns: [
+        //     {
+        //         title: 'Primary Contact',
+        //         key: 'contact'
+        //     },
+        //     // {
+        //     //     title: 'Primary Contact',
+        //     //     key: 'contact'
+        //     // }
+        //     ],
+        //     group:'Events'
+        // })
 
         /**
         controller.types.push({
@@ -149,12 +149,12 @@ angular.module('fluro.types')
 
 
 
-        controller.types.push({
-            singular: 'Scheduled Task',
-            plural: 'Scheduled Tasks',
-            path: 'task',
-            group:'Developer'
-        })
+        // controller.types.push({
+        //     singular: 'Scheduled Task',
+        //     plural: 'Scheduled Tasks',
+        //     path: 'task',
+        //     group:'Developer'
+        // })
 
         controller.types.push({
             singular: 'Checkin',
@@ -689,6 +689,8 @@ angular.module('fluro.types')
                 title: 'Inheritable',
                 key: 'inheritable'
             }],
+            viewModes: ['tree', 'default'],
+
         })
 
 
