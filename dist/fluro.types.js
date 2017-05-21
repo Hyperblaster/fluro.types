@@ -638,10 +638,12 @@ angular.module('fluro.types')
             path: 'interaction',
             columns: [{
                 title: 'First Name',
-                key: 'contact.firstName'
+                key: 'contact.firstName',
+                renderer: 'interactionFirstName',
             }, {
                 title: 'Last Name',
-                key: 'contact.lastName'
+                key: 'contact.lastName',
+                renderer: 'interactionLastName',
             }, {
                 title: 'Event',
                 key: 'event'
@@ -910,11 +912,12 @@ angular.module('fluro.types')
             columns: [{
                     title: 'Author',
                     key: 'author.name'
-                }, {
-                    title: 'Tags',
-                    key: 'tags',
-                    renderer: 'multi',
-                },
+                }
+                // , {
+                //     title: 'Tags',
+                //     key: 'tags',
+                //     renderer: 'multi',
+                // },
                 /**
             {
                 title: 'Realms',
