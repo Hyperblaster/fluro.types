@@ -364,11 +364,11 @@ angular.module('fluro.types')
             columns: [{
                     title: 'First Name',
                     key: 'firstName',
-                    filter: 'capitalize'
+                    renderer: 'capitalize'
                 }, {
                     title: 'Last Name',
                     key: 'lastName',
-                    filter: 'capitalize'
+                    renderer: 'capitalize'
                 }, {
                     title: 'Gender',
                     key: 'gender'
