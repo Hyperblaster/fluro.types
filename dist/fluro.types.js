@@ -198,14 +198,16 @@ angular.module('fluro.types')
             plural: 'Permission Policies',
             path: 'policy',
             
-            columns: [{
-                title: 'Permissions',
-                key: 'permissionSets',
-                renderer: 'permissionSet',
-            }, {
-                title: 'Realm',
-                key: 'realms'
-            },
+            columns: [
+            // {
+            //     title: 'Permissions',
+            //     key: 'permissionSets',
+            //     renderer: 'permissionSet',
+            // }, 
+            // {
+            //     title: 'Realm',
+            //     key: 'realms'
+            // },
             {
                 title: 'Status',
                 key: 'status'
@@ -339,16 +341,16 @@ angular.module('fluro.types')
         })
 
 
-        controller.types.push({
-            singular: 'Notification',
-            plural: 'Notifications',
-            path: 'notification',
-            // columns: [{
-            //     title: 'Limit',
-            //     key: 'limit'
-            // }],
-            group:'Config'
-        })
+        // controller.types.push({
+        //     singular: 'Notification',
+        //     plural: 'Notifications',
+        //     path: 'notification',
+        //     // columns: [{
+        //     //     title: 'Limit',
+        //     //     key: 'limit'
+        //     // }],
+        //     group:'Config'
+        // })
 
         controller.types.push({
             singular: 'Package',
