@@ -194,8 +194,8 @@ angular.module('fluro.types')
         })
 
         controller.types.push({
-            singular: 'Policy',
-            plural: 'Permission Policies',
+            singular: 'Access Pass',
+            plural: 'Access Passes',
             path: 'policy',
             
             columns: [
