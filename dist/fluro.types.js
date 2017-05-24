@@ -693,7 +693,7 @@ angular.module('fluro.types')
                 title: 'Inheritable',
                 key: 'inheritable'
             }],
-            viewModes: ['tree', 'default'],
+            viewModes: ['default', 'tree'],
 
         })
 
