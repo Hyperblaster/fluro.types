@@ -703,7 +703,7 @@ angular.module('fluro.types')
             plural: 'User Personas',
             path: 'persona',
             columns: [{
-                title: 'Permission Policies',
+                title: 'Access Passes',
                 key: 'policies'
             }, {
                 title: 'Extra permissions',
