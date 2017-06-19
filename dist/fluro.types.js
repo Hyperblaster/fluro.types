@@ -88,10 +88,19 @@ angular.module('fluro.types')
             }, {
                 title: 'Type',
                 key: 'item._type'
+            }, {
+                title: 'Process Status',
+                key: 'processStatus'
+            },{
+                title: 'Tasks',
+                key: 'taskCount.incomplete'
             }],
             filters: [{
                 title: 'State',
                 key: 'state'
+            }, {
+                title: 'Process Status',
+                key: 'processStatus'
             }, {
                 title: 'Type',
                 key: 'item._type'
