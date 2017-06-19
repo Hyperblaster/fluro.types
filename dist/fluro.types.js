@@ -225,7 +225,7 @@ angular.module('fluro.types')
                     {
                         title: 'Tags',
                         key: 'tags',
-                        renderer: 'multi'
+                        //renderer: 'multi'
 
                     }
                     /**/
@@ -264,7 +264,7 @@ angular.module('fluro.types')
 
             title: 'Event',
             key: 'event',
-            renderer: 'multi'
+            //renderer: 'multi'
         },
         /**/
                 {
@@ -280,14 +280,14 @@ angular.module('fluro.types')
                 {
                     title: 'Realms',
                     key: 'realms',
-                    renderer: 'multi'
+                    //renderer: 'multi'
 
                 }, 
                 /**/
                 {
                     title: 'Tags',
                     key: 'tags',
-                    renderer: 'multi'
+                    // //renderer: 'multi'
 
                 }
             ],
@@ -444,7 +444,7 @@ angular.module('fluro.types')
                 {
                     title: 'Tags',
                     key: 'tags',
-                    renderer: 'multi',
+                    // //renderer: 'multi',
                 }, {
                     title: 'Created',
                     key: 'created',
@@ -464,7 +464,7 @@ angular.module('fluro.types')
                 key: 'Distributor'
             }, {
                 title: 'Tags',
-                key: 'tags'
+                // key: 'tags'
             }],
             group: 'Products',
         })
@@ -590,7 +590,7 @@ angular.module('fluro.types')
             {
                 title: 'Realms',
                 key: 'realms',
-                renderer: 'multi'
+                //renderer: 'multi'
             }
 /**/
                 {
@@ -655,7 +655,7 @@ angular.module('fluro.types')
             {
                 title: 'Realms',
                 key: 'realms',
-                renderer: 'multi'
+                //renderer: 'multi'
 
             }, 
 /**/
@@ -901,13 +901,13 @@ angular.module('fluro.types')
                 // , {
                 //     title: 'Tags',
                 //     key: 'tags',
-                //     renderer: 'multi',
+                //     //renderer: 'multi',
                 // },
                 /**
             {
                 title: 'Realms',
                 key: 'realms',
-                renderer: 'multi',
+                //renderer: 'multi',
             }
 /**/
             ],
@@ -936,7 +936,7 @@ angular.module('fluro.types')
             {
                 title: 'Realms',
                 key: 'realms',
-                renderer: 'multi',
+                //renderer: 'multi',
             }
 /**/
             ],
@@ -975,13 +975,13 @@ angular.module('fluro.types')
                 }, {
                     title: 'Tags',
                     key: 'tags',
-                    renderer: 'multi',
+                    // //renderer: 'multi',
                 },
                 /**
             {
                 title: 'Realms',
                 key: 'realms',
-                renderer: 'multi',
+                //renderer: 'multi',
             }, 
 /**/
             ],
@@ -1005,7 +1005,7 @@ angular.module('fluro.types')
             {
                 title: 'Realms',
                 key: 'realms',
-                renderer: 'multi',
+                //renderer: 'multi',
             },
             /**/
                 {
@@ -1027,13 +1027,13 @@ angular.module('fluro.types')
                 }, {
                     title: 'Tags',
                     key: 'tags',
-                    renderer: 'multi',
+                    // //renderer: 'multi',
                 },
                 /**
             {
                 title: 'Realms',
                 key: 'realms',
-                renderer: 'multi',
+                //renderer: 'multi',
             }, 
 /**/
                 {
@@ -1066,7 +1066,7 @@ angular.module('fluro.types')
                 {
                     title: 'Realms',
                     key: 'realms',
-                    renderer: 'multi',
+                    //renderer: 'multi',
                 }, 
 /**/
                 {
@@ -1113,7 +1113,7 @@ angular.module('fluro.types')
             {
                 title: 'Realms',
                 key: 'realms',
-                renderer: 'multi',
+                //renderer: 'multi',
             },
             /**/
                 {
@@ -1146,7 +1146,7 @@ angular.module('fluro.types')
             {
                 title: 'Realms',
                 key: 'realms',
-                renderer: 'multi',
+                //renderer: 'multi',
             }, 
             /**/
             ],
@@ -1163,7 +1163,7 @@ angular.module('fluro.types')
             {
                 title: 'Realms',
                 key: 'realms',
-                renderer: 'multi',
+                //renderer: 'multi',
             }, 
             /**/
             ],
