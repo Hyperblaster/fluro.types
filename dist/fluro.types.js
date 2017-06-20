@@ -107,7 +107,7 @@ angular.module('fluro.types')
                 key: 'item._type'
             }, {
                 title: 'Assigned to',
-                key: 'item.managedOwner'
+                key: 'managedOwners'
             }],
             viewModes: ['process', 'default'],
             group: 'Contacts'
