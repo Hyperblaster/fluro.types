@@ -93,7 +93,8 @@ angular.module('fluro.types')
                 key: 'processStatus'
             },{
                 title: 'Tasks',
-                key: 'taskCount.incomplete'
+                key: 'taskCount.incomplete',
+                renderer:'number',
             }],
             filters: [{
                 title: 'State',
@@ -106,7 +107,7 @@ angular.module('fluro.types')
                 key: 'item._type'
             }, {
                 title: 'Assigned to',
-                key: 'item.managedOwners'
+                key: 'item.managedOwner'
             }],
             viewModes: ['process', 'default'],
             group: 'Contacts'
