@@ -98,14 +98,14 @@ angular.module('fluro.types')
             }, {
                 title: 'Assigned to',
                 key: 'managedOwners',
-                renderer:'personaFace',
+                renderer:'personaAvatar',
             }],
             filters: [{
                 title: 'State',
                 key: 'state'
             }, {
                 title: 'Process Status',
-                key: 'personaAvatar'
+                key: 'processStatus'
             }, {
                 title: 'Type',
                 key: 'item._type'
