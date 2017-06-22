@@ -932,7 +932,7 @@ angular.module('fluro.types')
 
         controller.types.push({
             // hideFromMenu: true,
-            sub:'event',
+            // sub:'event',
             singular: 'Attendance Headcount',
             plural: 'Attendance Headcounts',
             path: 'attendance',
