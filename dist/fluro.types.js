@@ -931,14 +931,14 @@ angular.module('fluro.types')
 
 
         controller.types.push({
-            hideFromMenu: true,
-            // sub:'event',
-            singular: 'Attendance',
-            plural: 'Attendance Reports',
+            // hideFromMenu: true,
+            sub:'event',
+            singular: 'Attendance Headcount',
+            plural: 'Attendance Headcounts',
             path: 'attendance',
             columns: [{
-                    title: 'Author',
-                    key: 'author.name'
+                    title: 'Creator',
+                    key: 'managedAuthor',
                 }, {
                     title: 'Event',
                     key: 'event',
@@ -946,13 +946,11 @@ angular.module('fluro.types')
                     title: 'Count',
                     key: 'count',
                 },
-                /**
-            {
-                title: 'Realms',
-                key: 'realms',
-                //renderer: 'multi',
-            }
-/**/
+            ],
+            columns: [{
+                    title: 'Creator',
+                    key: 'managedAuthor'
+                }
             ],
             group: 'Events',
         })
