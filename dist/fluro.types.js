@@ -99,6 +99,7 @@ angular.module('fluro.types')
                 title: 'Assigned to',
                 key: 'managedOwners',
                 renderer:'personaAvatar',
+                persist:true,
             }],
             filters: [{
                 title: 'State',
@@ -273,14 +274,6 @@ angular.module('fluro.types')
             plural: 'Plans',
             path: 'plan',
             columns: [
-                /**  
-        {
-
-            title: 'Event',
-            key: 'event',
-            //renderer: 'multi'
-        },
-        /**/
                 {
                     title: 'Time',
                     key: 'startDate',
@@ -290,14 +283,6 @@ angular.module('fluro.types')
                     key: 'startDate',
                     renderer: 'date'
                 },
-                /**
-                {
-                    title: 'Realms',
-                    key: 'realms',
-                    //renderer: 'multi'
-
-                }, 
-                /**/
                 {
                     title: 'Tags',
                     key: 'tags',
@@ -937,7 +922,7 @@ angular.module('fluro.types')
             plural: 'Attendance Headcounts',
             path: 'attendance',
             columns: [{
-                    title: 'Creator',
+                    title: 'Posted by',
                     key: 'managedAuthor',
                 }, {
                     title: 'Event',
