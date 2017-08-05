@@ -97,8 +97,8 @@ angular.module('fluro.types')
                 renderer:'number',
             }, {
                 title: 'Assigned to',
-                key: 'managedOwners',
-                renderer:'personaAvatar',
+                key: 'assignedTo',
+                renderer:'contactAvatar',
                 persist:true,
             }],
             filters: [{
@@ -112,7 +112,7 @@ angular.module('fluro.types')
                 key: 'item._type'
             }, {
                 title: 'Assigned to',
-                key: 'managedOwners',
+                key: 'assignedTo',
             }],
             viewModes: ['process', 'default'],
             group: 'Contacts'
