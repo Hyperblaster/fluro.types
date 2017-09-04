@@ -703,10 +703,9 @@ angular.module('fluro.types')
                 title: 'Last Login',
                 key: 'lastLogin',
                 renderer: 'datetime',
-            }, {
-                title: 'Status',
-                key: 'status'
-            }],
+            }
+           
+            ],
             filters: [{
                 title: 'Access Passes',
                 key: 'policies'
