@@ -701,6 +701,11 @@ angular.module('fluro.types')
             }, {
                 title: 'Status',
                 key: 'status'
+            },
+            {
+                title: 'Last Login',
+                key: 'lastLogin',
+                renderer: 'date',
             }],
             filters: [{
                 title: 'Access Passes',
