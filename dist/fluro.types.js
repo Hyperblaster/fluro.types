@@ -865,6 +865,22 @@ angular.module('fluro.types')
 
 
         controller.types.push({
+            hideFromMenu: true,
+            singular: 'Storefront',
+            plural: 'Storefronts',
+            path: 'storefront',
+            // columns: [{
+            //     title: 'Event',
+            //     key: 'event'
+            // }, {
+            //     title: 'Contact',
+            //     key: 'contact'
+            // }],
+            group: 'Products'
+        })
+
+
+        controller.types.push({
             sub: 'application',
             // hideFromMenu: true,
             singular: 'Deployment',
