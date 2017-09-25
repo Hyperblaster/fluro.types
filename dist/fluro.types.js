@@ -1380,6 +1380,10 @@ angular.module('fluro.types')
                         // //console.log('Test child', child);
                         var yes = FluroAccess.canAccess(child.definitionName, child.parentType);
 
+                        if(child.systemOnly) {
+                            // console.log('TESSSSING', child)
+                            return false;
+                        }
                         // //console.log('CAN ACCESS?', child.definitionName, yes);
 
                         return yes;
