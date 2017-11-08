@@ -219,7 +219,7 @@ angular.module('fluro.types')
             columns: [
                 {
                     title: 'Disabled',
-                    key: 'deactivate',
+                    key: 'deactivated',
                 }, 
             ],
         })
