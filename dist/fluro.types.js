@@ -38,6 +38,19 @@ angular.module('fluro.types')
             group: 'Interactions'
         })
 
+        controller.types.push({
+            singular: 'Roster',
+            plural: 'Rosters',
+            path: 'roster',
+            columns: [
+                {
+                    title: 'Event',
+                    key: 'event'
+                }
+            ],
+            group: 'Events'
+        })
+
 
         // controller.types.push({
         //     singular: 'Ticketing',
@@ -202,7 +215,13 @@ angular.module('fluro.types')
             singular: 'Reaction',
             plural: 'Reactions',
             path: 'reaction',
-            group: 'Config'
+            group: 'Config',
+            columns: [
+                {
+                    title: 'Disabled',
+                    key: 'deactivate',
+                }, 
+            ],
         })
 
         controller.types.push({
