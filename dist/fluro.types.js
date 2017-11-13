@@ -652,6 +652,10 @@ angular.module('fluro.types')
                 key: 'contact.lastName',
                 renderer: 'interactionLastName',
             }, {
+                title: 'Contacts',
+                key: 'contacts'
+            },
+            {
                 title: 'Event',
                 key: 'event'
             }],
@@ -875,6 +879,9 @@ angular.module('fluro.types')
             columns: [{
                 title: 'Event',
                 key: 'event'
+            },{
+                title: 'Roster',
+                key: 'roster'
             }, {
                 title: 'Contact',
                 key: 'contact'
