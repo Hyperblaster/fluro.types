@@ -138,7 +138,7 @@ angular.module('fluro.types')
             singular: 'Capability',
             plural: 'Capabilities',
             path: 'capability',
-            group: 'Contacts'
+            group: 'Config'
         })
 
 
@@ -384,7 +384,7 @@ angular.module('fluro.types')
             singular: 'Package',
             plural: 'Packages',
             path: 'package',
-            group: 'Products',
+            group: 'Config',
         })
 
         controller.types.push({
@@ -1024,7 +1024,7 @@ angular.module('fluro.types')
                 title: 'Default Start Time',
                 key: 'defaultStartTime'
             }],
-            group: 'Events',
+            group: 'Config',
         })
 
         controller.types.push({
