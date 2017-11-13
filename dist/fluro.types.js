@@ -132,6 +132,16 @@ angular.module('fluro.types')
         });
 
 
+          controller.types.push({
+            sub: 'contact',
+            // hideFromMenu: true,
+            singular: 'Capability',
+            plural: 'Capabilities',
+            path: 'capability',
+            group: 'Contacts'
+        })
+
+
         controller.types.push({
             singular: 'Mailout',
             plural: 'Mailouts',
@@ -931,14 +941,7 @@ angular.module('fluro.types')
 
 
 
-        controller.types.push({
-            sub: 'contact',
-            // hideFromMenu: true,
-            singular: 'Capability',
-            plural: 'Capabilities',
-            path: 'capability',
-            group: 'Contact'
-        })
+      
 
         controller.types.push({
             singular: 'Collection',
