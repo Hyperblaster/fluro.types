@@ -643,17 +643,20 @@ angular.module('fluro.types')
             singular: 'Interaction',
             plural: 'Interactions',
             path: 'interaction',
-            columns: [{
-                title: 'First Name',
-                key: 'contact.firstName',
-                renderer: 'interactionFirstName',
-            }, {
-                title: 'Last Name',
-                key: 'contact.lastName',
-                renderer: 'interactionLastName',
-            }, {
+            columns: [
+            // {
+            //     title: 'First Name',
+            //     key: 'contact.firstName',
+            //     renderer: 'interactionFirstName',
+            // }, {
+            //     title: 'Last Name',
+            //     key: 'contact.lastName',
+            //     renderer: 'interactionLastName',
+            // }, 
+            {
                 title: 'Contacts',
-                key: 'contacts'
+                key: 'contacts',
+                renderer:'contacts',
             },
             {
                 title: 'Event',
