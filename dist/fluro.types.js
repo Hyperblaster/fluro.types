@@ -154,6 +154,10 @@ angular.module('fluro.types')
             group: 'Contacts'
         });
 
+
+
+
+
         controller.types.push({
             singular: 'Family Household',
             plural: 'Family Households',
@@ -923,6 +927,17 @@ angular.module('fluro.types')
                 key: 'commitID'
             }],
             group: 'Developer'
+        })
+
+
+
+        controller.types.push({
+            sub: 'contact',
+            // hideFromMenu: true,
+            singular: 'Capability',
+            plural: 'Capabilities',
+            path: 'capability',
+            group: 'Contact'
         })
 
         controller.types.push({
