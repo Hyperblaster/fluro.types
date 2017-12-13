@@ -989,7 +989,7 @@ angular.module('fluro.types')
             columns: [{
                     title: 'Date',
                     key: 'event.startDate',
-                    renderer:'date',
+                    renderer:'datetime',
                 }, {
                     title: 'Count',
                     key: 'count',
