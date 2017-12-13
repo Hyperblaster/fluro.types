@@ -997,11 +997,6 @@ angular.module('fluro.types')
                     key: 'count',
                 },
             ],
-            columns: [{
-                    title: 'Creator',
-                    key: 'managedAuthor'
-                }
-            ],
             group: 'Events',
         })
 
