@@ -42,12 +42,11 @@ angular.module('fluro.types')
             singular: 'Roster',
             plural: 'Rosters',
             path: 'roster',
-            columns: [
-                {
-                    title: 'Event',
-                    key: 'event'
-                }
-            ],
+            hideFromMenu: true,
+            columns: [{
+                title: 'Event',
+                key: 'event'
+            }],
             group: 'Events'
         })
 
@@ -104,15 +103,15 @@ angular.module('fluro.types')
             }, {
                 title: 'Process Status',
                 key: 'processStatus'
-            },{
+            }, {
                 title: 'Tasks',
                 key: 'taskCount.incomplete',
-                renderer:'number',
+                renderer: 'number',
             }, {
                 title: 'Assigned to',
                 key: 'assignedTo',
-                renderer:'contactAvatar',
-                persist:true,
+                renderer: 'contactAvatar',
+                persist: true,
             }],
             filters: [{
                 title: 'State',
@@ -132,7 +131,7 @@ angular.module('fluro.types')
         });
 
 
-          controller.types.push({
+        controller.types.push({
             sub: 'contact',
             // hideFromMenu: true,
             singular: 'Capability',
@@ -230,12 +229,10 @@ angular.module('fluro.types')
             plural: 'Reactions',
             path: 'reaction',
             group: 'Config',
-            columns: [
-                {
-                    title: 'Disabled',
-                    key: 'deactivated',
-                }, 
-            ],
+            columns: [{
+                title: 'Disabled',
+                key: 'deactivated',
+            }, ],
         })
 
         controller.types.push({
@@ -306,23 +303,20 @@ angular.module('fluro.types')
             singular: 'Plan',
             plural: 'Plans',
             path: 'plan',
-            columns: [
-                {
-                    title: 'Time',
-                    key: 'startDate',
-                    renderer: 'time'
-                }, {
-                    title: 'Date',
-                    key: 'startDate',
-                    renderer: 'date'
-                },
-                {
-                    title: 'Tags',
-                    key: 'tags',
-                    // //renderer: 'multi'
+            columns: [{
+                title: 'Time',
+                key: 'startDate',
+                renderer: 'time'
+            }, {
+                title: 'Date',
+                key: 'startDate',
+                renderer: 'date'
+            }, {
+                title: 'Tags',
+                key: 'tags',
+                // //renderer: 'multi'
 
-                }
-            ],
+            }],
             group: 'Events'
         })
 
@@ -658,24 +652,24 @@ angular.module('fluro.types')
             plural: 'Interactions',
             path: 'interaction',
             columns: [
-            // {
-            //     title: 'First Name',
-            //     key: 'contact.firstName',
-            //     renderer: 'interactionFirstName',
-            // }, {
-            //     title: 'Last Name',
-            //     key: 'contact.lastName',
-            //     renderer: 'interactionLastName',
-            // }, 
-            {
-                title: 'Contacts',
-                key: 'contacts',
-                renderer:'contacts',
-            },
-            {
-                title: 'Event',
-                key: 'event'
-            }],
+                // {
+                //     title: 'First Name',
+                //     key: 'contact.firstName',
+                //     renderer: 'interactionFirstName',
+                // }, {
+                //     title: 'Last Name',
+                //     key: 'contact.lastName',
+                //     renderer: 'interactionLastName',
+                // }, 
+                {
+                    title: 'Contacts',
+                    key: 'contacts',
+                    renderer: 'contacts',
+                }, {
+                    title: 'Event',
+                    key: 'event'
+                }
+            ],
             group: 'Interactions',
         })
 
@@ -738,8 +732,7 @@ angular.module('fluro.types')
                 title: 'User',
                 key: 'username',
                 renderer: 'userType',
-            },
-            {
+            }, {
                 title: 'Last Login',
                 key: 'lastLogin',
                 renderer: 'datetime',
@@ -896,7 +889,7 @@ angular.module('fluro.types')
             columns: [{
                 title: 'Event',
                 key: 'event'
-            },{
+            }, {
                 title: 'Roster',
                 key: 'roster'
             }, {
@@ -941,7 +934,7 @@ angular.module('fluro.types')
 
 
 
-      
+
 
         controller.types.push({
             singular: 'Collection',
@@ -987,17 +980,16 @@ angular.module('fluro.types')
             plural: 'Attendance Headcounts',
             path: 'attendance',
             columns: [{
-                    title: 'Date',
-                    key: 'event.startDate',
-                    renderer:'datetime',
-                }, {
-                    title: 'Count',
-                    key: 'count',
-                }, {
-                    title: 'Posted by',
-                    key: 'managedAuthor',
-                },
-            ],
+                title: 'Date',
+                key: 'event.startDate',
+                renderer: 'datetime',
+            }, {
+                title: 'Count',
+                key: 'count',
+            }, {
+                title: 'Posted by',
+                key: 'managedAuthor',
+            }, ],
             group: 'Events',
         })
 
@@ -1252,7 +1244,7 @@ angular.module('fluro.types')
         return [].concat(controller.types, controller.definedTypes);
     }
 
-    ///////////////////
+    ///////////////////////////////////////////////////////////
 
     controller.getTypeFromPath = function(path) {
         var primitive = _.find(TypeConfig.types, {
@@ -1279,7 +1271,7 @@ angular.module('fluro.types')
         }
     }
 
-    ///////////////////
+    ///////////////////////////////////////////////////////////
 
     controller.isBasicType = function(typeName) {
         return _.some(controller.types, function(type) {
@@ -1287,7 +1279,7 @@ angular.module('fluro.types')
         })
     }
 
-    ///////////////////
+    ///////////////////////////////////////////////////////////
 
     controller.sideLoadDefinition = function(definition) {
 
@@ -1309,7 +1301,7 @@ angular.module('fluro.types')
         }
     }
 
-    ///////////////////
+    ///////////////////////////////////////////////////////////
 
     controller.refreshDefinedTypes = function() {
 
@@ -1338,7 +1330,7 @@ angular.module('fluro.types')
 
     }
 
-    ///////////////////
+    ///////////////////////////////////////////////////////////
 
     controller.requiredBasicTypes = function() {
 
@@ -1349,7 +1341,26 @@ angular.module('fluro.types')
     }
 
 
-    ///////////////////
+    ///////////////////////////////////////////////////////////
+
+
+    controller.getPostTypes = function(type) {
+
+        //Get all post types
+        var allPostTypes = controller.getSubTypes('post');
+
+        // console.log('Wooot', postTypes)
+        return _.filter(allPostTypes, function(def) {
+            var parentRestrictions = _.get(def, 'data.postParentTypes');
+            if(!parentRestrictions || !parentRestrictions.length) {
+            return true; 
+            }
+            
+            return _.includes(parentRestrictions, type);
+        });
+    }
+
+    ///////////////////////////////////////////////////////////
 
     controller.refreshMenuTree = function() {
 
@@ -1423,7 +1434,7 @@ angular.module('fluro.types')
                         // //console.log('Test child', child);
                         var yes = FluroAccess.canAccess(child.definitionName, child.parentType);
 
-                        if(child.systemOnly) {
+                        if (child.systemOnly) {
                             // console.log('TESSSSING', child)
                             return false;
                         }
