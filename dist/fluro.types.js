@@ -172,14 +172,14 @@ angular.module('fluro.types')
             plural: 'Family Households',
             path: 'family',
             columns: [{
-                title: 'Names',
-                key: 'firstLine'
-            }, {
                 title: 'Address',
                 key: 'address.addressLine1'
             }, {
                 title: 'Suburb',
                 key: 'address.suburb'
+            }, {
+                title: 'Postal Code',
+                key: 'address.postalCode'
             }],
             viewModes: ['duplicates', 'map'],
             group: 'Contacts'
