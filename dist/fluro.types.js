@@ -21,10 +21,6 @@ angular.module('fluro.types')
             group: 'Permissions'
         })
 
-
-
-
-
         controller.types.push({
             singular: 'Post',
             plural: 'Posts',
@@ -263,8 +259,16 @@ angular.module('fluro.types')
             plural: 'Groups / Teams',
             path: 'team',
             columns: [{
-                    title: 'Provisional',
+                    title: 'Provisional Membership',
                     key: 'allowProvisional',
+                },
+                {
+                    title: 'Visible to Assigned',
+                    key: 'visibleAssigned',
+                },
+                {
+                    title: 'Visible to Members',
+                    key: 'visibleMembers',
                 },
                 /**
                     {
@@ -275,9 +279,18 @@ angular.module('fluro.types')
                     }
                     /**/
             ],
-            filters: [{
+            filters: [
+                {
                     title: 'Provisional',
                     key: 'allowProvisional',
+                },
+                {
+                    title: 'Visible to Assigned',
+                    key: 'visibleAssigned',
+                },
+                {
+                    title: 'Visible to Members',
+                    key: 'visibleMembers',
                 },
                 /**
         {
