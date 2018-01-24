@@ -261,14 +261,17 @@ angular.module('fluro.types')
             columns: [{
                     title: 'Provisional Membership',
                     key: 'allowProvisional',
+                    renderer:'boolean',
                 },
                 {
                     title: 'Visible to Assigned',
                     key: 'visibleAssigned',
+                    renderer:'boolean',
                 },
                 {
                     title: 'Visible to Members',
                     key: 'visibleMembers',
+                    renderer:'boolean',
                 },
                 /**
                     {
