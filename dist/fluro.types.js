@@ -890,10 +890,6 @@ angular.module('fluro.types')
                 title: 'Inherits Realms',
                 key: 'inheritRealms',
                 // renderer: 'datetime',
-            }, {
-                title: 'Tags',
-                key: 'tags',
-                // renderer: 'datetime',
             }],
         });
 
