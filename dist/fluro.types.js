@@ -881,6 +881,10 @@ angular.module('fluro.types')
                 title: 'Created',
                 key: 'created',
                 renderer: 'datetime',
+            }, {
+                title: 'When',
+                key: 'created',
+                renderer: 'timeago',
             }],
             filters: [{
                 title: 'Inherits Accounts',
