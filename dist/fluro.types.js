@@ -177,6 +177,19 @@ angular.module('fluro.types')
                 title: 'Postal Code',
                 key: 'address.postalCode'
             }],
+            filters: [{
+                title: 'Suburb',
+                key: 'address.suburb'
+            }, {
+                title: 'State',
+                key: 'address.state'
+            }, {
+                title: 'Country',
+                key: 'address.country'
+            }, {
+                title: 'Postal Code',
+                key: 'address.postalCode'
+            }],
             viewModes: ['duplicates', 'map'],
             group: 'Contacts'
         })
@@ -259,6 +272,14 @@ angular.module('fluro.types')
             plural: 'Groups / Teams',
             path: 'team',
             columns: [{
+                    title: 'Members',
+                    key: 'memberCount.provisional',
+                },
+                {
+                    title: 'Team',
+                    key: 'memberCount.assigned',
+                },
+                {
                     title: 'Provisional Membership',
                     key: 'allowProvisional',
                     renderer:'boolean',
@@ -437,8 +458,8 @@ angular.module('fluro.types')
         })
 
         controller.types.push({
-            singular: 'Contact Details',
-            plural: 'Contact Details',
+            singular: 'Detail Sheet',
+            plural: 'Detail Sheets',
             path: 'contactdetail',
             columns: [{
                 title: 'First Name',
