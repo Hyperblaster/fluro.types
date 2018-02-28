@@ -274,10 +274,12 @@ angular.module('fluro.types')
             columns: [{
                     title: 'Members',
                     key: 'memberCount.provisional',
+                    renderer:'number',
                 },
                 {
                     title: 'Team',
                     key: 'memberCount.assigned',
+                    renderer:'number',
                 },
                 {
                     title: 'Provisional Membership',
