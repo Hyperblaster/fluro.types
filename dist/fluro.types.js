@@ -851,7 +851,10 @@ angular.module('fluro.types')
             }, {
                 title: 'Rooms',
                 key: 'rooms',
-            }],
+            },{
+                title: 'Timezone',
+                key: 'timezone',
+            },],
             viewModes: ['calendar', 'cards', 'tracks'],
             group: 'Events',
         })
@@ -1058,6 +1061,13 @@ angular.module('fluro.types')
             columns: [{
                 title: 'Default Start Time',
                 key: 'defaultStartTime'
+            }, {
+                title: 'Default Location',
+                key: 'defaultLocation'
+            }],
+            filters: [{
+                title: 'Default Location',
+                key: 'defaultLocation'
             }],
             group: 'Config',
         })
