@@ -260,9 +260,14 @@ angular.module('fluro.types')
                 //     key: 'realms'
                 // },
                 {
+                    title: 'Invite Code',
+                    key: 'inviteCode',
+                    renderer:'sensitive',
+                },
+                {
                     title: 'Status',
                     key: 'status'
-                }
+                },
             ],
             group: 'Permissions'
         })
