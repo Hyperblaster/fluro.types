@@ -261,8 +261,8 @@ angular.module('fluro.types')
                 // },
                 {
                     title: 'Invite Code',
-                    key: 'privateDetails.inviteCode',
-                    renderer:'sensitive',
+                    key: 'inviteCodeEnabled',
+                    renderer:'generateInviteCode',
                 },
                 {
                     title: 'Status',
