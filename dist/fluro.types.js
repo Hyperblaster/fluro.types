@@ -1038,8 +1038,8 @@ angular.module('fluro.types')
         controller.types.push({
             // hideFromMenu: true,
             // sub:'event',
-            singular: 'Attendance Headcount',
-            plural: 'Attendance Headcounts',
+            singular: 'Headcount',
+            plural: 'Headcounts',
             path: 'attendance',
             columns: [{
                 title: 'Date',
