@@ -98,7 +98,8 @@ angular.module('fluro.types')
                 key: 'item._type'
             }, {
                 title: 'Process Status',
-                key: 'processStatus'
+                key: 'processStatus',
+                renderer:'processStatus',
             }, {
                 title: 'Tasks',
                 key: 'taskCount.incomplete',
@@ -108,6 +109,10 @@ angular.module('fluro.types')
                 key: 'assignedTo',
                 renderer: 'contactAvatar',
                 persist: true,
+            }, {
+                title: 'Due Date',
+                key: 'dueDate',
+                renderer: 'date',
             }],
             filters: [{
                 title: 'State',
