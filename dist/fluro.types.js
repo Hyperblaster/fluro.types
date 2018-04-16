@@ -93,14 +93,12 @@ angular.module('fluro.types')
             columns: [{
                 title: 'Current State',
                 key: 'state'
-            }, {
-                title: 'Type',
-                key: 'item._type'
-            }, {
-                title: 'Process Status',
-                key: 'processStatus',
-                renderer:'processStatus',
-            }, {
+            }, 
+            // {
+            //     title: 'Type',
+            //     key: 'item._type'
+            // },
+              {
                 title: 'Tasks',
                 key: 'taskCount.incomplete',
                 renderer: 'number',
@@ -109,6 +107,10 @@ angular.module('fluro.types')
                 key: 'assignedTo',
                 renderer: 'contactAvatar',
                 persist: true,
+            }, {
+                title: 'Process Status',
+                key: 'processStatus',
+                renderer:'processStatus',
             }, {
                 title: 'Due',
                 key: 'dueDate',
