@@ -91,31 +91,32 @@ angular.module('fluro.types')
             plural: 'Processes',
             path: 'process',
             columns: [{
-                title: 'Current State',
-                key: 'state'
-            }, 
-            // {
-            //     title: 'Type',
-            //     key: 'item._type'
-            // },
-              {
-                title: 'Tasks',
-                key: 'taskCount.incomplete',
-                renderer: 'number',
-            }, {
-                title: 'Assigned to',
-                key: 'assignedTo',
-                renderer: 'contactAvatar',
-                persist: true,
-            }, {
-                title: 'Process Status',
-                key: 'processStatus',
-                renderer:'processStatus',
-            }, {
-                title: 'Due',
-                key: 'dueDate',
-                renderer: 'timeago',
-            }],
+                    title: 'Current State',
+                    key: 'state'
+                },
+                // {
+                //     title: 'Type',
+                //     key: 'item._type'
+                // },
+                {
+                    title: 'Tasks',
+                    key: 'taskCount.incomplete',
+                    renderer: 'number',
+                }, {
+                    title: 'Assigned to',
+                    key: 'assignedTo',
+                    renderer: 'contactAvatar',
+                    persist: true,
+                }, {
+                    title: 'Process Status',
+                    key: 'processStatus',
+                    renderer: 'processStatus',
+                }, {
+                    title: 'Due',
+                    key: 'dueDate',
+                    renderer: 'timeago',
+                }
+            ],
             filters: [{
                 title: 'State',
                 key: 'state'
@@ -269,9 +270,8 @@ angular.module('fluro.types')
                 {
                     title: 'Invite Code',
                     key: 'inviteCodeEnabled',
-                    renderer:'generateInviteCode',
-                },
-                {
+                    renderer: 'generateInviteCode',
+                }, {
                     title: 'Status',
                     key: 'status'
                 },
@@ -286,27 +286,23 @@ angular.module('fluro.types')
             columns: [{
                     title: 'Members',
                     key: 'memberCount.provisional',
-                    renderer:'number',
-                },
-                {
+                    renderer: 'number',
+                }, {
                     title: 'Team',
                     key: 'memberCount.assigned',
-                    renderer:'number',
-                },
-                {
+                    renderer: 'number',
+                }, {
                     title: 'Provisional Membership',
                     key: 'allowProvisional',
-                    renderer:'boolean',
-                },
-                {
+                    renderer: 'boolean',
+                }, {
                     title: 'Visible to Assigned',
                     key: 'visibleAssigned',
-                    renderer:'boolean',
-                },
-                {
+                    renderer: 'boolean',
+                }, {
                     title: 'Visible to Members',
                     key: 'visibleMembers',
-                    renderer:'boolean',
+                    renderer: 'boolean',
                 },
                 /**
                     {
@@ -317,16 +313,13 @@ angular.module('fluro.types')
                     }
                     /**/
             ],
-            filters: [
-                {
+            filters: [{
                     title: 'Provisional',
                     key: 'allowProvisional',
-                },
-                {
+                }, {
                     title: 'Visible to Assigned',
                     key: 'visibleAssigned',
-                },
-                {
+                }, {
                     title: 'Visible to Members',
                     key: 'visibleMembers',
                 },
@@ -863,10 +856,10 @@ angular.module('fluro.types')
             }, {
                 title: 'Rooms',
                 key: 'rooms',
-            },{
+            }, {
                 title: 'Timezone',
                 key: 'timezone',
-            },],
+            }, ],
             viewModes: ['calendar', 'cards', 'tracks'],
             group: 'Events',
         })
@@ -1095,7 +1088,11 @@ angular.module('fluro.types')
                     title: 'Tags',
                     key: 'tags',
                     // //renderer: 'multi',
-                },
+                }, {
+                    title: 'Security',
+                    key: 'privacy',
+                    renderer: 'privacy',
+                }
                 /**
             {
                 title: 'Realms',
@@ -1107,6 +1104,9 @@ angular.module('fluro.types')
             filters: [{
                 title: 'File Type',
                 key: 'extension'
+            }, {
+                title: 'Security',
+                key: 'privacy',
             }],
             group: 'Files',
         })
@@ -1168,6 +1168,9 @@ angular.module('fluro.types')
             filters: [{
                 title: 'Asset Type',
                 key: 'assetType'
+            }, {
+                title: 'Security',
+                key: 'privacy',
             }],
             viewModes: ['grid'],
             group: 'Files',
@@ -1251,6 +1254,9 @@ angular.module('fluro.types')
             }, {
                 title: 'Asset Type',
                 key: 'assetType'
+            }, {
+                title: 'Security',
+                key: 'privacy',
             }],
             viewModes: ['grid'],
             group: 'Files',
@@ -1421,10 +1427,10 @@ angular.module('fluro.types')
         // console.log('Wooot', postTypes)
         return _.filter(allPostTypes, function(def) {
             var parentRestrictions = _.get(def, 'data.postParentTypes');
-            if(!parentRestrictions || !parentRestrictions.length) {
-            return true; 
+            if (!parentRestrictions || !parentRestrictions.length) {
+                return true;
             }
-            
+
             return _.includes(parentRestrictions, type);
         });
     }
