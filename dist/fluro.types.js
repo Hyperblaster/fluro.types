@@ -448,6 +448,11 @@ angular.module('fluro.types')
                     title: 'Family Household',
                     key: 'family'
                 },
+                {
+                    title: 'Created',
+                    key: 'created',
+                    renderer: 'date',
+                },
                 /**
             {
                 title: 'Realms',
@@ -1092,7 +1097,12 @@ angular.module('fluro.types')
                     title: 'Security',
                     key: 'privacy',
                     renderer: 'privacy',
-                }
+                },
+                {
+                    title: 'Downloads',
+                    key: 'stats.download',
+                    renderer: 'number',
+                },
                 /**
             {
                 title: 'Realms',
@@ -1163,7 +1173,12 @@ angular.module('fluro.types')
                     title: 'Security',
                     key: 'privacy',
                     renderer: 'privacy',
-                }
+                },
+                {
+                    title: 'Downloads',
+                    key: 'stats.download',
+                    renderer: 'number',
+                },
             ],
             filters: [{
                 title: 'Asset Type',
@@ -1202,6 +1217,16 @@ angular.module('fluro.types')
                     title: 'Security',
                     key: 'privacy',
                     renderer: 'privacy',
+                },
+                {
+                    title: 'Plays',
+                    key: 'stats.play',
+                    renderer: 'number',
+                },
+                {
+                    title: 'Downloads',
+                    key: 'stats.download',
+                    renderer: 'number',
                 },
 
             ],
@@ -1246,7 +1271,12 @@ angular.module('fluro.types')
                     title: 'Security',
                     key: 'privacy',
                     renderer: 'privacy',
-                }
+                },
+                {
+                    title: 'Downloads',
+                    key: 'stats.download',
+                    renderer: 'number',
+                },
             ],
             filters: [{
                 title: 'File Type',
