@@ -451,7 +451,7 @@ angular.module('fluro.types')
                 {
                     title: 'Created',
                     key: 'created',
-                    renderer: 'datetime',
+                    renderer: 'date',
                 },
                 /**
             {
