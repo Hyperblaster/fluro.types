@@ -55,7 +55,8 @@ controller.types.push({
             hideFromMenu: true,
             columns: [{
                 title: 'Next Date',
-                key: 'nextDate'
+                key: 'nextDate',
+                renderer:"datetime",
             }],
             group: 'Config'
         })
