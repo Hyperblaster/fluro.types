@@ -49,9 +49,9 @@ angular.module('fluro.types')
 
 
 controller.types.push({
-            singular: 'Cron',
-            plural: 'Crons',
-            path: 'cron',
+            singular: 'Time Trigger',
+            plural: 'Time Triggers',
+            path: 'timetrigger',
             hideFromMenu: true,
             columns: [{
                 title: 'Next Date',
