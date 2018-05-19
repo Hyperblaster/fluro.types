@@ -178,11 +178,11 @@ controller.types.push({
                 key: 'stats.mailoutSent',
                 renderer: 'number',
             }, {
-                title: 'Opens',
+                title: 'Opened',
                 key: 'stats.mailoutOpen',
                 renderer: 'number',
             }, {
-                title: 'Clicks',
+                title: 'Clicked',
                 key: 'stats.mailoutClick',
                 renderer: 'number',
             }],
