@@ -588,7 +588,8 @@ controller.types.push({
                 key: 'frequency',
             }, {
                 title: 'Licenses',
-                key: 'limit'
+                key: 'limit',
+                renderer: 'number',
             }, {
                 title: 'Purchases',
                 key: 'stats.purchase',
