@@ -492,7 +492,7 @@ controller.types.push({
                 title: 'Gender',
                 key: 'gender'
             }],
-            viewModes: ['cohort', 'duplicates'],
+            viewModes: ['week', 'month', 'duplicates'],
             group: 'Contacts',
         })
 
