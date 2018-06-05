@@ -242,7 +242,6 @@ controller.types.push({
             singular: 'Checkin',
             plural: 'Checkins',
             path: 'checkin',
-            viewModes: ['cohort'],
             columns: [
                 // {
                 //         title: 'Event',
@@ -493,7 +492,7 @@ controller.types.push({
                 title: 'Gender',
                 key: 'gender'
             }],
-            viewModes: ['duplicates'],
+            viewModes: ['cohort', 'duplicates'],
             group: 'Contacts',
         })
 
