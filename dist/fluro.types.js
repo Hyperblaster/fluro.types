@@ -123,9 +123,13 @@ controller.types.push({
                     renderer: 'contactAvatar',
                     persist: true,
                 }, {
-                    title: 'Process Status',
+                    title: 'Current Status',
                     key: 'processStatus',
                     renderer: 'processStatus',
+                }, {
+                    title: 'Progress',
+                    key: 'processStatus',
+                    renderer: 'processProgress',
                 }, {
                     title: 'Due',
                     key: 'dueDate',
