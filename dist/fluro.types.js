@@ -122,15 +122,17 @@ controller.types.push({
                     key: 'assignedTo',
                     renderer: 'contactAvatar',
                     persist: true,
-                }, {
-                    title: 'Current Status',
-                    key: 'processStatus',
-                    renderer: 'processStatus',
-                }, {
+                },  {
                     title: 'Progress',
                     key: 'processStatus',
                     renderer: 'processProgress',
-                }, {
+                }, 
+                // {
+                //     title: 'Current State',
+                //     key: 'processStatus',
+                //     renderer: 'processStatus',
+                // },
+                {
                     title: 'Due',
                     key: 'dueDate',
                     renderer: 'timeago',
