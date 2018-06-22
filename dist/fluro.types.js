@@ -479,7 +479,8 @@ controller.types.push({
                     renderer: 'age',
                 }, {
                     title: 'Family Household',
-                    key: 'family'
+                    key: 'family',
+                    renderer:'familyRole',
                 },
                 // {
                 //     title: 'Created',
@@ -497,6 +498,9 @@ controller.types.push({
             filters: [{
                 title: 'Gender',
                 key: 'gender'
+            }, {
+                title: 'Household Role',
+                key: 'householdRole'
             }],
             viewModes: ['checkin-week', 'checkin-month', 'duplicates'],
             group: 'Contacts',
