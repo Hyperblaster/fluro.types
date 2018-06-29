@@ -1448,6 +1448,13 @@ controller.types.push({
         }
     }
 
+
+    ///////////////////////////////////////////////////////////
+
+    controller.getDefinition = function(definitionName) {
+        return FluroContent.endpoint('defined/types/' + definitionName, true, true).query().$promise;        
+    }
+
     ///////////////////////////////////////////////////////////
 
     controller.refreshDefinedTypes = function() {
