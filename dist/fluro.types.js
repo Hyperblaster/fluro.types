@@ -1452,6 +1452,8 @@ controller.types.push({
     ///////////////////////////////////////////////////////////
 
     controller.getDefinition = function(definitionName) {
+
+        console.log('Retrieve definition from server')
         return FluroContent.endpoint('defined/' + definitionName, true, true).get().$promise;        
     }
 
