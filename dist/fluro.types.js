@@ -1452,7 +1452,7 @@ controller.types.push({
     ///////////////////////////////////////////////////////////
 
     controller.getDefinition = function(definitionName) {
-        return FluroContent.endpoint('defined/' + definitionName, true, true).query().$promise;        
+        return FluroContent.endpoint('defined/' + definitionName, true, true).get().$promise;        
     }
 
     ///////////////////////////////////////////////////////////
