@@ -1054,7 +1054,7 @@ controller.types.push({
             plural: 'Articles',
             path: 'article',
             columns: [{
-                    title: 'Author',
+                    title: 'Created by',
                     key: 'author.name'
                 }
                 // , {
@@ -1180,7 +1180,7 @@ controller.types.push({
             },
             /**/
                 {
-                    title: 'Author',
+                    title: 'Created by',
                     key: 'author.name'
                 }
             ],
