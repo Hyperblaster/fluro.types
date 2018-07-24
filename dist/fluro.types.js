@@ -1350,22 +1350,7 @@ controller.types.push({
             group: 'Developer',
         })
 
-        controller.types.push({
-            sub: 'component',
-            singular: 'Site Block',
-            plural: 'Site Blocks',
-            path: 'siteblock',
-            columns: [
-                /**
-            {
-                title: 'Realms',
-                key: 'realms',
-                //renderer: 'multi',
-            }, 
-            /**/
-            ],
-            group: 'Developer',
-        })
+       
 
         /////////////////////////////////////
 
