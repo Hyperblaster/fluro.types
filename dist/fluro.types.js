@@ -337,6 +337,11 @@ controller.types.push({
                     key: 'visibleMembers',
                     renderer: 'boolean',
                 },
+                {
+                    title: 'Notifications',
+                    key: 'notifications',
+                    renderer: 'notifications',
+                },
                 /**
                     {
                         title: 'Tags',
