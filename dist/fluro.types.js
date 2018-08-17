@@ -445,6 +445,19 @@ controller.types.push({
         })
 
 
+        controller.types.push({
+            singular: 'Query Result Set',
+            hideFromMenu: true,
+            plural: 'Query Result Sets',
+            path: 'resultset',
+            // columns: [{
+            //     title: 'Limit',
+            //     key: 'limit'
+            // }],
+            group: 'Developer'
+        })
+
+
         // controller.types.push({
         //     singular: 'Notification',
         //     plural: 'Notifications',
