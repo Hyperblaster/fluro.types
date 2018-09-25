@@ -514,7 +514,7 @@ controller.types.push({
 /**/
             ],
             filters: [{
-                title: 'Definition',
+                title: 'Contact Type',
                 key: 'definition'
             }, {
                 title: 'Gender',
