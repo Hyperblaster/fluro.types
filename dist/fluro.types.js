@@ -1575,6 +1575,8 @@ controller.types.push({
                     return (typeEntry.sub == type.path);
                 });
 
+                 // | orderBy:'plural'
+
                 children = children.concat(subChildren);
 
                 // if(subChildren && subChildren.length) {
@@ -1601,8 +1603,11 @@ controller.types.push({
                             return false;
                         }
                         // //console.log('CAN ACCESS?', child.definitionName, yes);
-
+                        
                         return yes;
+                    })
+                    .sortBy(function(child) {
+                        return child.plural;
                     })
                     .value();
 
