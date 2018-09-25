@@ -513,10 +513,12 @@ controller.types.push({
             }
 /**/
             ],
-            filters: [{
-                title: 'Contact Type',
-                key: 'definition'
-            }, {
+            filters: [
+            // {
+            //     title: 'Contact Type',
+            //     key: 'definition'
+            // }, 
+            {
                 title: 'Gender',
                 key: 'gender'
             }, {
