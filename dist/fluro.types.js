@@ -258,11 +258,11 @@ controller.types.push({
                 //         key: 'contact'
                 //     },
 
-                {
-                    title: 'Check in date',
-                    key: 'created',
-                    renderer: 'date'
-                },
+                // {
+                //     title: 'Check in date',
+                //     key: 'created',
+                //     renderer: 'date'
+                // },
                 {
                     title: 'Checked in by',
                     key: 'checkedInBy',
