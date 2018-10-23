@@ -249,10 +249,11 @@ controller.types.push({
             plural: 'Checkins',
             path: 'checkin',
             columns: [
-                // {
-                //         title: 'Event',
-                //         key: 'event'
-                //     }, {
+                {
+                        title: 'Event',
+                        key: 'event'
+                    }, 
+                    // {
                 //         title: 'Contact',
                 //         key: 'contact'
                 //     },
@@ -261,7 +262,16 @@ controller.types.push({
                     title: 'Check in date',
                     key: 'created',
                     renderer: 'date'
-                }, {
+                },
+                {
+                    title: 'Checked in by',
+                    key: 'checkedInBy',
+                }, 
+                {
+                    title: 'Checked out by',
+                    key: 'checkedOutBy',
+                }, 
+                {
                     title: 'Checked in time',
                     key: 'created',
                     renderer: 'time'
@@ -271,6 +281,10 @@ controller.types.push({
                     renderer: 'time'
                 }
             ],
+            filters: [{
+                title: 'Event',
+                key: 'event'
+            }],
             group: 'Events'
         })
 
