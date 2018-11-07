@@ -258,11 +258,11 @@ controller.types.push({
                 //         key: 'contact'
                 //     },
 
-                // {
-                //     title: 'Check in date',
-                //     key: 'created',
-                //     renderer: 'date'
-                // },
+                {
+                    title: 'Check in date',
+                    key: 'created',
+                    renderer: 'date'
+                },
                 {
                     title: 'Checked in by',
                     key: 'checkedInBy',
@@ -848,6 +848,9 @@ controller.types.push({
             plural: 'User Personas',
             path: 'persona',
             columns: [{
+                title: 'Mention ID',
+                key: 'mentionID'
+            }, {
                 title: 'Access Passes',
                 key: 'policies'
             }, {
