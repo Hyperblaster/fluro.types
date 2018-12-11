@@ -156,14 +156,14 @@ controller.types.push({
         });
 
 
-        // controller.types.push({
-        //     sub: 'contact',
-        //     // hideFromMenu: true,
-        //     singular: 'Capability',
-        //     plural: 'Capabilities',
-        //     path: 'capability',
-        //     group: 'Config'
-        // })
+        controller.types.push({
+            sub: 'contact',
+            hideFromMenu: true,
+            singular: 'Capability',
+            plural: 'Capabilities',
+            path: 'capability',
+            group: 'Config'
+        })
 
 
         controller.types.push({
