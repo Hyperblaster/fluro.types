@@ -538,7 +538,8 @@ controller.types.push({
             }, {
                 title: 'Household Role',
                 key: 'householdRole'
-            }],
+            }
+            ],
             viewModes: ['checkin-week', 'checkin-month', 'duplicates'],
             group: 'Contacts',
         })
@@ -1484,16 +1485,22 @@ controller.types.push({
 
     ///////////////////////////////////////////////////////////
 
-    controller.refreshDefinedTypes = function() {
+
+    var inflightRequest;
+
+    controller.refreshDefinedTypes = function(useExistingInflightRequest) {
 
         // //console.log('Refresh defined types')
-        //if (controller.definedTypes) {
-        //   return controller.definedTypes;
-        //}
+        if (useExistingInflightRequest && inflightRequest) {
+            console.log('Use inflight request')
+          return inflightRequest;
+        }
 
 
         //Make a new request
-        controller.definedTypes = FluroContent.endpoint('defined', true, true).query({
+        inflightRequest = 
+        controller.definedTypes = 
+        FluroContent.endpoint('defined', true, true).query({
             allDefinitions: true,
         });
 
@@ -1504,6 +1511,9 @@ controller.types.push({
         controller.definedTypes.$promise.then(function(ty) {
             // //console.log('Git defined types', ty)
             controller.refreshMenuTree();
+
+            //Remove the inflight request
+            inflightRequest = null;
             //delete controller.refreshRequest;
         })
 
@@ -1729,9 +1739,6 @@ controller.types.push({
             return type.parentType == parentType;
         })
     }
-
-
-
 
     ///////////////////
 
