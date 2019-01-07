@@ -1505,7 +1505,6 @@ controller.types.push({
         //Store the promise;
         inflightRequest = controller.definedTypes.$promise;
         
-
         //Create the refresh request
         //controller.refreshRequest = true;
 
