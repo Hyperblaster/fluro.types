@@ -1518,7 +1518,13 @@ controller.types.push({
             //delete controller.refreshRequest;
         })
 
-        return controller.definedTypes;
+
+        if(useExistingInflightRequest) {
+            return controller.definedTypes.$promise;
+        } else {
+            return controller.definedTypes;
+        }
+        
 
     }
 
