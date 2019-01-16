@@ -157,7 +157,7 @@ controller.types.push({
 
 
         controller.types.push({
-            sub: 'contact',
+            // sub: 'contact',
             hideFromMenu: true,
             singular: 'Capability',
             plural: 'Capabilities',
