@@ -166,13 +166,8 @@ controller.types.push({
             columns: [{
                     title: 'Definition',
                     key: 'definition',
+                    renderer:'definitionName',
                 }
-            ],
-            filters: [
-            {
-                title: 'Definition',
-                key: 'definition'
-            }
             ],
         })
 
