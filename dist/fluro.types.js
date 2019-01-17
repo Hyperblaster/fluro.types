@@ -710,6 +710,11 @@ controller.types.push({
                     key: 'mode',
                     renderer: 'paymentMode',
                 }, 
+                {
+                    title: 'Time of Payment',
+                    key: 'time',
+                    renderer: 'paymentTime',
+                }, 
                 // {
                 //     title: 'Date',
                 //     key: 'created',
