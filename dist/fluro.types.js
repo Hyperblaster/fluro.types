@@ -1167,11 +1167,11 @@ controller.types.push({
                 key: 'defaultStartTime'
             }, {
                 title: 'Default Location',
-                key: 'defaultLocation'
+                key: 'defaultLocations'
             }],
             filters: [{
                 title: 'Default Location',
-                key: 'defaultLocation'
+                key: 'defaultLocations'
             }],
             group: 'Config',
         })
