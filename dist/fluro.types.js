@@ -171,6 +171,27 @@ controller.types.push({
             ],
         })
 
+        controller.types.push({
+            // sub: 'contact',
+            hideFromMenu: true,
+            singular: 'Institution',
+            plural: 'Institutions',
+            path: 'institution',
+            group: 'Config',
+            columns: [
+                {
+                    title: 'Auto Graduate',
+                    key: 'autoGraduate',
+                    renderer:'boolean',
+                },
+                {
+                    title: 'Graduation Date',
+                    key: 'graduationDate',
+                    renderer:'date',
+                }
+            ],
+        })
+
 
         controller.types.push({
             singular: 'Mailout',
