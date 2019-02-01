@@ -174,9 +174,9 @@ controller.types.push({
         controller.types.push({
             // sub: 'contact',
             hideFromMenu: true,
-            singular: 'Institution',
-            plural: 'Institutions',
-            path: 'institution',
+            singular: 'Academic Calendar',
+            plural: 'Academic Calendars',
+            path: 'academic',
             group: 'Config',
             columns: [
                 {
