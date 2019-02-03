@@ -361,23 +361,47 @@ controller.types.push({
                     title: 'Members',
                     key: 'memberCount.provisional',
                     renderer: 'number',
-                }, {
+                }, 
+                {
                     title: 'Team',
                     key: 'memberCount.assigned',
                     renderer: 'number',
-                }, {
-                    title: 'Provisional Membership',
+                }, 
+
+                {
+                    title: 'Interested',
+                    key: 'memberCount.interested',
+                    renderer: 'number',
+                }, 
+                {
+                    title: 'Provisional',
                     key: 'allowProvisional',
                     renderer: 'boolean',
-                }, {
-                    title: 'Visible to Assigned',
+                }, 
+                {
+                    title: 'Visible to Team',
                     key: 'visibleAssigned',
                     renderer: 'boolean',
-                }, {
+                }, 
+                {
+                    title: 'Details shared with Team',
+                    key: 'shareContactDetails',
+                    renderer: 'boolean',
+                }, 
+
+
+
+                {
                     title: 'Visible to Members',
                     key: 'visibleMembers',
                     renderer: 'boolean',
                 },
+                {
+                    title: 'Details shared with Members',
+                    key: 'shareContactDetailsProvisional',
+                    renderer: 'boolean',
+                }, 
+
                 {
                     title: 'Notifications',
                     key: 'notifications',
@@ -396,11 +420,18 @@ controller.types.push({
                     title: 'Provisional',
                     key: 'allowProvisional',
                 }, {
-                    title: 'Visible to Assigned',
+                    title: 'Visible to Team',
                     key: 'visibleAssigned',
                 }, {
+                    title: 'Details shared with Team',
+                    key: 'shareContactDetails',
+                },
+                {
                     title: 'Visible to Members',
                     key: 'visibleMembers',
+                }, {
+                    title: 'Share details with Members',
+                    key: 'shareContactDetailsProvisional',
                 },
                 /**
         {
