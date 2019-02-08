@@ -597,6 +597,13 @@ controller.types.push({
                 title: 'Household Role',
                 key: 'householdRole'
             }
+            {
+                title: 'School',
+                key: 'academicCalendar'
+            }, {
+                title: 'Grade',
+                key: 'academicGrade'
+            }
             ],
             viewModes: ['checkin-week', 'checkin-month', 'duplicates'],
             group: 'Contacts',
@@ -1466,7 +1473,7 @@ controller.types.push({
     })
 
 
-.service('TypeService', ['$q', 'Fluro', 'FluroContent', 'FluroAccess', 'TypeConfig', '$resource', function($q, Fluro, FluroContent, FluroAccess, TypeConfig, $resource) {
+.service('TypeService', function($q, Fluro, FluroContent, FluroAccess, TypeConfig, $resource) {
 
     var controller = {};
 
@@ -1813,4 +1820,4 @@ controller.types.push({
     ///////////////////
 
     return controller;
-}]);
+});
