@@ -596,7 +596,7 @@ controller.types.push({
             }, {
                 title: 'Household Role',
                 key: 'householdRole'
-            }
+            },
             {
                 title: 'School',
                 key: 'academicCalendar'
@@ -1473,7 +1473,7 @@ controller.types.push({
     })
 
 
-.service('TypeService', function($q, Fluro, FluroContent, FluroAccess, TypeConfig, $resource) {
+.service('TypeService', ['$q', 'Fluro', 'FluroContent', 'FluroAccess', 'TypeConfig', '$resource', function($q, Fluro, FluroContent, FluroAccess, TypeConfig, $resource) {
 
     var controller = {};
 
@@ -1820,4 +1820,4 @@ controller.types.push({
     ///////////////////
 
     return controller;
-});
+}]);
