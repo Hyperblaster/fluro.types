@@ -572,6 +572,16 @@ controller.types.push({
                     key: 'family',
                     renderer:'familyRole',
                 },
+                {
+                    title: 'Grade',
+                    key: 'academicGrade',
+                    renderer:'academicGrade',
+                },
+                {
+                    title: 'School',
+                    key: 'academicCalendar',
+                    renderer:'academicCalendar',
+                },
                 // {
                 //     title: 'Created',
                 //     key: 'created',
