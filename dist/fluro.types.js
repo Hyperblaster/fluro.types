@@ -66,7 +66,7 @@ controller.types.push({
             singular: 'Ticket',
             plural: 'Tickets',
             path: 'ticket',
-            // hideFromMenu: true,
+            hideFromMenu: true,
             filters: [
                 {
                     title: 'Ticket Type',
