@@ -62,6 +62,7 @@ controller.types.push({
         })
 
 
+    //Ticketing options
 controller.types.push({
             singular: 'Ticket',
             plural: 'Tickets',
