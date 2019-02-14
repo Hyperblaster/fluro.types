@@ -624,8 +624,8 @@ controller.types.push({
                     key: 'gender'
                 }, {
                     title: 'Age',
-                    key: 'dob',
-                    renderer: 'age',
+                    key: 'age',
+                    // renderer: 'age',
                 }, {
                     title: 'Family Household',
                     key: 'family',
