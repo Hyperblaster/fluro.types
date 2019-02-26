@@ -264,7 +264,8 @@ controller.types.push({
                 key: 'definition'
             }, {
                 title: 'Publish Date',
-                key: 'item.publishDate'
+                key: 'publishDate',
+                renderer:'date',
             }, {
                 title: 'Sent',
                 key: 'stats.mailoutSent',
