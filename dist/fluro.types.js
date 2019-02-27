@@ -1641,7 +1641,7 @@ controller.types.push({
         //controller.refreshRequest = true;
 
         //Clean up once done
-        controller.definedTypes.$promise.then(function(ty) {
+        inflightRequest.then(function(ty) {
             // //console.log('Git defined types', ty)
             controller.refreshMenuTree();
 
