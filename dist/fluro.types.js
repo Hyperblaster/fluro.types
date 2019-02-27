@@ -1535,7 +1535,9 @@ controller.types.push({
 
 .service('TypeService', ['$q', 'Fluro', 'FluroContent', 'FluroAccess', 'TypeConfig', '$resource', function($q, Fluro, FluroContent, FluroAccess, TypeConfig, $resource) {
 
-    var controller = {};
+    var controller = {
+        dictionary:{},
+    };
 
     ///////////////////
 
@@ -1643,6 +1645,8 @@ controller.types.push({
             // //console.log('Git defined types', ty)
             controller.refreshMenuTree();
 
+
+
             //Remove the inflight request
             inflightRequest = null;
             //delete controller.refreshRequest;
@@ -1693,6 +1697,12 @@ controller.types.push({
     controller.refreshMenuTree = function() {
 
 
+
+        
+
+
+
+
         var grouped = _.groupBy(controller.definedTypes, function(defined) {
             return defined.parentType;
         });
@@ -1729,6 +1739,16 @@ controller.types.push({
         var allTypes = _.filter(controller.types, function(type) {
             return !type.hideFromMenu && !type.sub;
         });
+
+        //////////////////////////////////////////////////////
+
+         //Add a fast lookup
+        controller.dictionary = _.reduce(allTypes, function(set, definition) {
+            set[definition.definitionName] = definition;
+            return set;
+        }, {})
+
+        //////////////////////////////////////////////////////
 
         controller.menuTree = _.chain(allTypes).map(function(type) {
 
