@@ -261,7 +261,8 @@ controller.types.push({
                 key: 'state'
             }, {
                 title: 'Definition',
-                key: 'definition'
+                key: 'definition',
+                renderer:'definitionName',
             }, {
                 title: 'Publish Date',
                 key: 'publishDate',
@@ -936,10 +937,12 @@ controller.types.push({
             path: 'definition',
             columns: [{
                     title: 'Type',
-                    key: 'parentType'
+                    key: 'parentType',
+                    renderer:'definitionName',
                 }, {
                     title: 'Machine Name',
-                    key: 'definitionName'
+                    key: 'definitionName',
+
                 },
                 /**
             {
@@ -952,7 +955,7 @@ controller.types.push({
             ],
             filters: [{
                 title: 'Basic Type',
-                key: 'parentType'
+                key: 'parentType',
             }],
             group: 'Config',
         })
