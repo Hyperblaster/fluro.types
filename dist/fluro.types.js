@@ -81,10 +81,6 @@ controller.types.push({
                     title: 'Collected',
                     key: 'collected',
                 },
-                {
-                    title: 'Events',
-                    key: 'event',
-                },
             ],
             columns: [
             {
