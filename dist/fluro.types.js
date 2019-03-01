@@ -70,6 +70,10 @@ controller.types.push({
             hideFromMenu: true,
             filters: [
                 {
+                    title: 'Title',
+                    key: 'title',
+                },
+                {
                     title: 'Ticket Type',
                     key: 'ticketType',
                 },
