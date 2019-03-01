@@ -83,9 +83,10 @@ controller.types.push({
                 },
             ],
             columns: [
+            
             {
-                title: 'Ticket Type',
-                key: 'ticketType',
+                title: 'Contact',
+                key: 'contact',
             },
 
             {
@@ -99,15 +100,17 @@ controller.types.push({
                 renderer:'boolean',
             },
 
+
+
+            
+
+
             {
                 title: 'Event',
                 key: 'event',
             },
 
-            {
-                title: 'Contact',
-                key: 'contact',
-            },
+            
 
             {
                 title: 'Interaction',
@@ -115,9 +118,17 @@ controller.types.push({
             },
 
             {
-                title: 'Num Tickets',
-                key: 'value',
+                title: 'Ticket Type',
+                key: 'ticketType',
             },
+
+            {
+                title: 'Value',
+                key: 'value',
+                renderer:'number',
+            },
+
+
 
 
             ],
