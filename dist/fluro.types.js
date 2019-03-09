@@ -97,7 +97,7 @@ controller.types.push({
             {
                 title: 'Collected',
                 key: 'collected',
-                renderer:'boolean',
+                renderer:'collectButton',
             },
 
 
