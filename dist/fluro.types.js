@@ -78,6 +78,10 @@ controller.types.push({
                     key: 'ticketType',
                 },
                 {
+                    title: 'Event',
+                    key: 'event',
+                },
+                {
                     title: 'Collected',
                     key: 'collected',
                 },
