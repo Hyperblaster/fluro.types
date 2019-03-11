@@ -67,7 +67,7 @@ controller.types.push({
             singular: 'Ticket',
             plural: 'Tickets',
             path: 'ticket',
-            hideFromMenu: true,
+            // hideFromMenu: true,
             filters: [
                 {
                     title: 'Title',
@@ -624,6 +624,7 @@ controller.types.push({
         controller.types.push({
             singular: 'Package',
             plural: 'Packages',
+            hideFromMenu: true,
             path: 'package',
             group: 'Config',
         })
@@ -798,6 +799,7 @@ controller.types.push({
         controller.types.push({
             singular: 'Payment Method',
             plural: 'Payment Methods',
+            hideFromMenu: true,
             path: 'method',
             columns: [{
                 title: 'User',
@@ -1174,6 +1176,7 @@ controller.types.push({
             plural: 'Onboarding Gateways',
             path: 'onboard',
             group: 'Developer',
+            hideFromMenu: true,
         });
 
         controller.types.push({
