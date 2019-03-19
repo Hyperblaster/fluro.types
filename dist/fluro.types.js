@@ -947,8 +947,16 @@ controller.types.push({
                 }, {
                     title: 'Event',
                     key: 'event'
-                }
+                },
+                {
+                    title: 'Amount',
+                    renderer: 'amountDue',
+                },
             ],
+            filters: [{
+                title: 'Payment Outstanding',
+                key: 'outstanding'
+            }],
             group: 'Interactions',
         })
 
