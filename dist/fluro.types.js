@@ -956,6 +956,9 @@ controller.types.push({
             filters: [{
                 title: 'Payment Outstanding',
                 key: 'outstanding'
+            }, {
+                title: 'Payment Method',
+                key: 'paymentMethod'
             }],
             group: 'Interactions',
         })
