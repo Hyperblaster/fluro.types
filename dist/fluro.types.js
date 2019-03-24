@@ -236,17 +236,17 @@ controller.types.push({
 
         controller.types.push({
             // sub: 'contact',
-            hideFromMenu: true,
+            // hideFromMenu: true,
             singular: 'Capability',
             plural: 'Capabilities',
             path: 'capability',
             group: 'Config',
-            columns: [{
-                    title: 'Definition',
-                    key: 'definition',
-                    renderer:'definitionName',
-                }
-            ],
+            // columns: [{
+            //         title: 'Definition',
+            //         key: 'definition',
+            //         renderer:'definitionName',
+            //     }
+            // ],
         })
 
         controller.types.push({
