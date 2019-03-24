@@ -1323,11 +1323,16 @@ controller.types.push({
                 renderer: 'thumbnail',
             },  
             {
-                title: 'Default Start Time',
+                title: 'Definition',
+                key: 'recurDefinition',
+                renderer:'definitionName',
+            },
+            {
+                title: 'Start Time',
                 key: 'defaultStartTime'
             }, 
             {
-                title: 'Default Location',
+                title: 'Location',
                 key: 'defaultLocations'
             },
             {
@@ -1339,17 +1344,37 @@ controller.types.push({
                 title: 'Weekday',
                 key: 'recurWeekday'
             },
+            {
+                title: 'Recur in future',
+                key: 'recurMeasure'
+            },
+            {
+                title: 'Every',
+                key: 'recurCount'
+            },
+            {
+                title: 'Measure',
+                key: 'recurMeasure'
+            },
 
 
             ],
             filters: [
                 {
-                    title: 'Default Location',
-                    key: 'defaultLocations'
-                },
-                {
                     title: 'Automation',
                     key: 'autoRecur'
+                },
+                {
+                    title: 'Definition',
+                    key: 'recurDefinition'
+                },
+                {
+                    title: 'Weekday',
+                    key: 'recurWeekday'
+                },
+                {
+                    title: 'Default Location',
+                    key: 'defaultLocations'
                 },
                 {
                     title: 'Timezone',
