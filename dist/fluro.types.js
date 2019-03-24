@@ -241,12 +241,12 @@ controller.types.push({
             plural: 'Capabilities',
             path: 'capability',
             group: 'Config',
-            // columns: [{
-            //         title: 'Definition',
-            //         key: 'definition',
-            //         renderer:'definitionName',
-            //     }
-            // ],
+            columns: [{
+                    title: 'Definition',
+                    key: 'definition',
+                    renderer:'definitionName',
+                }
+            ],
         })
 
         controller.types.push({
