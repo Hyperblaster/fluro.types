@@ -1346,7 +1346,7 @@ controller.types.push({
             },
             {
                 title: 'Recur in future',
-                key: 'recurMeasure'
+                key: 'recurAmount'
             },
             {
                 title: 'Every',
