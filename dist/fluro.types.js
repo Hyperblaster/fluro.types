@@ -1318,16 +1318,45 @@ controller.types.push({
             // }],
             // viewModes: ['calendar', 'cards'],
             columns: [{
+                title: 'Image',
+                key: 'mainImage',
+                renderer: 'thumbnail',
+            },  
+            {
                 title: 'Default Start Time',
                 key: 'defaultStartTime'
-            }, {
+            }, 
+            {
                 title: 'Default Location',
                 key: 'defaultLocations'
-            }],
-            filters: [{
-                title: 'Default Location',
-                key: 'defaultLocations'
-            }],
+            },
+            {
+                title: 'Automation',
+                key: 'autoRecur',
+                renderer:'boolean',
+            },
+            {
+                title: 'Weekday',
+                key: 'recurWeekday'
+            },
+
+
+            ],
+            filters: [
+                {
+                    title: 'Default Location',
+                    key: 'defaultLocations'
+                },
+                {
+                    title: 'Automation',
+                    key: 'autoRecur'
+                },
+                {
+                    title: 'Timezone',
+                    key: 'defaultTimezone'
+                },
+
+            ],
             group: 'Config',
         })
 
