@@ -1345,12 +1345,14 @@ controller.types.push({
                 key: 'recurWeekday'
             },
             {
-                title: 'Recur in future',
-                key: 'recurAmount'
+                title: 'Create in future',
+                key: 'recurAmount',
+                renderer:'number',
             },
             {
                 title: 'Every',
-                key: 'recurCount'
+                key: 'recurCount',
+                renderer:'number',
             },
             {
                 title: 'Measure',
