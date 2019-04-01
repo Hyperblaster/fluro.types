@@ -236,7 +236,7 @@ controller.types.push({
 
         controller.types.push({
             // sub: 'contact',
-            // hideFromMenu: true,
+            hideFromMenu: true,
             singular: 'Capability',
             plural: 'Capabilities',
             path: 'capability',
@@ -953,7 +953,12 @@ controller.types.push({
                     renderer: 'amountDue',
                 },
             ],
-            filters: [{
+            filters: [
+            {
+                title: 'Issues / Warnings',
+                key: 'hasIssues'
+            },
+            {
                 title: 'Payment Outstanding',
                 key: 'outstanding'
             }, {
@@ -1323,16 +1328,11 @@ controller.types.push({
                 renderer: 'thumbnail',
             },  
             {
-                title: 'Definition',
-                key: 'recurDefinition',
-                renderer:'definitionName',
-            },
-            {
-                title: 'Start Time',
+                title: 'Default Start Time',
                 key: 'defaultStartTime'
             }, 
             {
-                title: 'Location',
+                title: 'Default Location',
                 key: 'defaultLocations'
             },
             {
@@ -1344,39 +1344,17 @@ controller.types.push({
                 title: 'Weekday',
                 key: 'recurWeekday'
             },
-            {
-                title: 'Create in future',
-                key: 'recurAmount',
-                renderer:'number',
-            },
-            {
-                title: 'Every',
-                key: 'recurCount',
-                renderer:'number',
-            },
-            {
-                title: 'Measure',
-                key: 'recurMeasure'
-            },
 
 
             ],
             filters: [
                 {
-                    title: 'Automation',
-                    key: 'autoRecur'
-                },
-                {
-                    title: 'Definition',
-                    key: 'recurDefinition'
-                },
-                {
-                    title: 'Weekday',
-                    key: 'recurWeekday'
-                },
-                {
                     title: 'Default Location',
                     key: 'defaultLocations'
+                },
+                {
+                    title: 'Automation',
+                    key: 'autoRecur'
                 },
                 {
                     title: 'Timezone',
