@@ -1115,6 +1115,9 @@ controller.types.push({
             }, {
                 title: 'Timezone',
                 key: 'timezone',
+            }, {
+                title: 'Event Track',
+                key: 'track',
             }, ],
             viewModes: ['calendar', 'cards', 'tracks'],
             group: 'Events',
