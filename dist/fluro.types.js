@@ -1366,7 +1366,8 @@ angular.module('fluro.types')
                 },
                 {
                     title: 'Every',
-                    key: 'recurCount'
+                    key: 'recurCount',
+                    renderer:'number',
                 },
                 {
                     title: 'Measure',
