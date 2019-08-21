@@ -1335,7 +1335,7 @@ angular.module('fluro.types')
                 {
                     title: 'Next Event',
                     key: 'upcoming[0].startDate',
-                    renderer:'date',
+                    renderer:'datetime',
                 },
                 // {
                 //     title: 'Default Start Time',
