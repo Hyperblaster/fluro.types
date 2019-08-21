@@ -1333,8 +1333,13 @@ angular.module('fluro.types')
                     renderer: 'thumbnail',
                 },
                 {
+                    title: 'Next Event',
+                    key: 'upcoming[0]',
+                },
+                {
                     title: 'Default Start Time',
-                    key: 'defaultStartTime'
+                    key: 'defaultStartTime',
+                    renderer:'military',
                 },
                 {
                     title: 'Expect Groups',
