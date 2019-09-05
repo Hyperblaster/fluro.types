@@ -832,7 +832,8 @@ angular.module('fluro.types')
                     title: 'Amount',
                     key: 'amount',
                     renderer: 'currency',
-                }, {
+                },
+                 {
                     title: 'Total',
                     key: 'total',
                     renderer: 'currency',
@@ -843,7 +844,17 @@ angular.module('fluro.types')
                     title: 'Payment',
                     key: 'paymentStatus',
                     renderer: 'paymentStatus',
-                }, {
+                }, 
+                {
+                    title: 'Integration',
+                    key: 'integration',
+                },
+
+                {
+                    title: 'Module',
+                    key: 'integration.module',
+                },
+                {
                     title: 'Mode',
                     key: 'mode',
                     renderer: 'paymentMode',
@@ -870,13 +881,23 @@ angular.module('fluro.types')
                 title: 'Payment Status',
                 key: 'paymentStatus',
 
-            }, {
+            }, 
+            {
+                    title: 'Integration',
+                    key: 'integration',
+                },
+
+                {
+                    title: 'Module',
+                    key: 'integration.module',
+                },{
                 title: 'Currency',
                 key: 'currency'
             }, {
                 title: 'Mode',
                 key: 'mode'
-            }],
+            },
+            ],
             group: 'Products',
         })
 
