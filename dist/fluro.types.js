@@ -43,6 +43,10 @@ angular.module('fluro.types')
                 title: 'Event',
                 key: 'event'
             }],
+            filters: [{
+                title: 'Event',
+                key: 'event'
+            }],
             group: 'Events'
         })
 
@@ -1232,6 +1236,13 @@ angular.module('fluro.types')
             }, {
                 title: 'Roster',
                 key: 'roster'
+            }, {
+                title: 'Contact',
+                key: 'contact'
+            }],
+            filters: [{
+                title: 'Event',
+                key: 'event'
             }, {
                 title: 'Contact',
                 key: 'contact'
