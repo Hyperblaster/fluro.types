@@ -392,6 +392,10 @@ angular.module('fluro.types')
             filters: [{
                 title: 'Event',
                 key: 'event'
+            },
+            {
+                title: 'Group / Room Names',
+                key: 'groupNames'
             }],
             group: 'Events'
         })
